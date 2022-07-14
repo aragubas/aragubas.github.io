@@ -1,0 +1,23 @@
+/* Imports Inter, Ubuntu Mono and Ubuntu fonts */
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter.ttf");
+}
+
+:root
+{
+  --page-background: rgb(245, 245, 245);
+  --background-separation: rgb(255, 255, 255);
+}
+
+body
+{
+  margin: 0;
+  background: var(--page-background);
+  font-family: "Inter", Arial, sans-serif;
+}
+
+img
+{
+  max-width: 100%;
+}
