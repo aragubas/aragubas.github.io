@@ -6,12 +6,87 @@
   <link rel="icon" type="image/svg+xml" href="/aragubas.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aragubas</title>
-  <script type="module" crossorigin src="/assets/index.8b6af56f.js"></script>
-  <link rel="stylesheet" href="/assets/index.20a64d4e.css">
+
+  <style>
+    /* Imports Inter, Ubuntu Mono and Ubuntu fonts */
+    @font-face {
+      font-family: 'Ubuntu';
+      src: url("__VITE_PUBLIC_ASSET__28a7862a__");
+      font-weight: normal;
+    }
+
+    @font-face {
+      font-family: 'Ubuntu';
+      src: url("__VITE_PUBLIC_ASSET__317df880__");
+      font-weight: bold;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url("__VITE_PUBLIC_ASSET__2b81767b__");
+      font-weight: bold;
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      src: url("__VITE_PUBLIC_ASSET__b0dda19c__");
+      font-weight: lighter;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    #app-loading-spinner {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(200, 200, 200);
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #app-loading-spinner #spinner {
+      animation: spin 1s linear infinite;
+      width: 15vw;
+      height: 15vw;
+      border-radius: 50%;
+      border: solid 1.5vw gray;
+      border-bottom-color: white;
+      will-change: transform;
+    }
+
+    @media screen and (max-width: 450px) {
+      #app-loading-spinner #spinner {
+        width: 50vw;
+        height: 50vw;
+        border: solid 5vw gray;
+        border-bottom-color: white;
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index.eda498b9.js"></script>
+  <link rel="stylesheet" href="/assets/index.2be1731e.css">
 </head>
 
 <body>
   <div id="app"></div>
+  <div id="app-loading-spinner">
+    <div id="spinner" />
+  </div>
   
 </body>
 

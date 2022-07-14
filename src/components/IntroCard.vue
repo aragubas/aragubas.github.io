@@ -1,57 +1,15 @@
 <script setup lang="ts">
-import { onMounted, ref } from '@vue/runtime-dom';
-
-const text = ref("Wait for it...");
-let typewriterText = "";
-let typewriterCharacter = 0;
-let typewriterActive = false;
-
-function typeSetUp(newText: string)
-{
-  if (newText == text.value) { return; }
-  typewriterText = newText;
-  typewriterActive = true;
-  typewriterCharacter = 0;
-  text.value = "";
-}
-
-onMounted(() => {
-  let ceira = 0;
-  typeSetUp("Brazilian software developer!");
-   
-  setInterval(() => {
-    if (typewriterActive)
-    {
-      if (typewriterCharacter > typewriterText.length - 1)
-      {
-        typewriterActive = false;
-        typewriterCharacter = 0;
-      }else
-      {
-        text.value += typewriterText[typewriterCharacter];
-  
-        typewriterCharacter++;
-      }
-    }
-
-  }, 50)
-
-  setInterval(() => {
-    if (ceira >= 5)
-    {
-      typeSetUp("Software Developer");
-    }
-
-    if (ceira >= 10)
-    {
-      typeSetUp("Inspiring Artist");
-      ceira = 0;
-    }
-
-    ceira++;
-  }, 2000)
-})
+import { ref } from '@vue/reactivity';
+import TypewritterList from './TypewritterList.vue';
  
+const wordlist: Array<string> = [
+  "Web Apps",
+  "Games",
+  "Illustrations",
+  "Music",
+  "Photo Editing"
+]
+
 </script>
  
 <template>
@@ -62,7 +20,10 @@ onMounted(() => {
     <span class="decoration"></span>
     <div class="intro-welcome clip-box">
       <h1>Hello, I'm Aragubas</h1>
-      <p class="ceira-text">{{text}}</p>
+      <div class="flex gap-small">
+        <p>I make</p>
+        <TypewritterList :word-list="wordlist" :delay="2500"></TypewritterList>
+      </div>
     </div>
   </div>
 </template>
@@ -81,21 +42,6 @@ onMounted(() => {
 {
   overflow: hidden;
 } 
-
-@keyframes flash {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-}
-.ceira-text::after
-{
-  content: "|";
-  animation: flash 1s step-end infinite;
-}
- 
-.ceira-text
-{
-  font-size: 1rem;
-}
 
 .logo-box
 {
