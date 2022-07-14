@@ -1,0 +1,15 @@
+.button
+{
+  display: block;
+  text-decoration: none;
+  background-color: var(--background-control);
+  padding: .3rem .8rem;
+  border-radius: 4px;
+  color: var(--color-normal);
+}
+
+.button:active
+{
+  background-color: var(--background-control-active);
+  color: var(--color-active);
+}

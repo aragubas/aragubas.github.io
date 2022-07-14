@@ -1,3 +1,6 @@
+@import url("css/button.css");
+@import url("css/css-reset.css");
+
 /* Imports Inter, Ubuntu Mono and Ubuntu fonts */
 @font-face {
   font-family: 'Ubuntu';
@@ -11,11 +14,26 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter-Light.ttf");
+  font-weight: lighter;
+}
+
 :root
 {
   --page-background: rgb(245, 245, 245);
   --background-separation: rgb(255, 255, 255);
+  --background-control: rgb(230, 230, 230);
+  --background-control-active: rgb(200, 200, 200);
   --color-normal: rgb(5, 5, 5);
+  --color-active: rgb(3, 3, 3);
 }
 
 body
@@ -26,11 +44,7 @@ body
   font-family: "Inter", Arial, sans-serif;
 }
 
-p
-{
-  margin: 0;
-}
-
+/* Fixed images being too big */
 img
 {
   max-width: 100%;
