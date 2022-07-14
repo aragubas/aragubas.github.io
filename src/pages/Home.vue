@@ -120,6 +120,12 @@ import IntroCard from '../components/IntroCard.vue';
   border-radius: 4px;
 }
 
+.project-card i
+{
+  text-decoration: underline;
+  font-style: normal;
+}
+
 .project-card .title
 {
   display: inline-flex;
