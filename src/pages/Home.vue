@@ -10,7 +10,7 @@ import IntroCard from '../components/IntroCard.vue';
   <section class="main-section">
     <div class="margin-medium">
       <h2>Software Projects</h2>
-      <p>I have a LOT of repositories uploaded on github. Most of them are WIP or just test. So here are the ones that I'm actually working on/finished</p>
+      <p>I have a LOT of repositories on github. Most of them are WIP or just test. So here are the ones that I'm actually working on/finished</p>
     </div>
 
     <section class="project-section">
