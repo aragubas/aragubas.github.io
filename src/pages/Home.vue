@@ -57,8 +57,8 @@ import IntroCard from '../components/IntroCard.vue';
       </article>
  
       <article class="project-card">
-        <h4 class="title">aiajsdkafoefpokwepfdoedpefw <span class="language-label" language="css">CSS</span></h4>
-        <p>????????????????????</p>
+        <h4 class="title">🗣<span class="language-label" language="css">CSS</span></h4>
+        <p>aiajsdkafoefpokwepfdoedpefw</p>
         <div class="flex gap-small-m">
           <a href="https://github.com/aragubas/aiajsdkafoefpokwepfdoedpefw" target="_blank" class="button">Github</a>
           <a href="https://aragubas.github.io/aiajsdkafoefpokwepfdoedpefw/" target="_blank" class="button">Website</a>
@@ -141,6 +141,43 @@ import IntroCard from '../components/IntroCard.vue';
   align-self: flex-start;
 }
 
+@media screen and (max-width: 400px)
+{
+  .project-section
+  {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    box-sizing: border-box;
+    justify-items: center;
+  }
+ 
+  .wrapper
+  {
+    align-items: center;
+    padding: 1rem .5rem;
+  }
+
+  .project-card
+  {
+    max-width: 90vw;
+    box-sizing: border-box;
+  }
+
+  .project-card .title
+  {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+  .main-section
+  {
+    margin: 0;
+  }
+
+}
+
 .language-label
 {
   display: block;
@@ -150,6 +187,7 @@ import IntroCard from '../components/IntroCard.vue';
   padding: .2rem;
   border-radius: 4px;
   color: white;
+  box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
 .language-label[language="c++"]

@@ -5,9 +5,9 @@ import TypewritterList from './TypewritterList.vue';
 const wordlist: Array<string> = [
   "Web Apps",
   "Games",
-  "Illustrations",
-  "Music",
-  "Photo Editing"
+  "Illustration/Drawing",
+  "Music (mostly chiptune)",
+  "Photo Editing stuff"
 ]
 
 </script>
