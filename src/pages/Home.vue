@@ -84,6 +84,9 @@ import IntroCard from '../components/IntroCard.vue';
 {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 920px;
 }
 
 .main-section h2
@@ -97,6 +100,7 @@ import IntroCard from '../components/IntroCard.vue';
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  text-align: start;
 }
 
 @keyframes project-card-in
