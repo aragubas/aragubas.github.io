@@ -18,7 +18,7 @@ function typeSetUp(newText: string)
 }
 
 onMounted(() => {
-  let ceira = 1;
+  let wordIndex = 1;
   typeSetUp(props.wordList[0]);
    
   setInterval(() => {
@@ -39,11 +39,11 @@ onMounted(() => {
   }, 50)
 
   setInterval(() => {
-    typeSetUp(props.wordList[ceira]);
+    typeSetUp(props.wordList[wordIndex]);
 
 
-    ceira++;
-    if (ceira > props.wordList.length - 1) { ceira = 0; }
+    wordIndex++;
+    if (wordIndex > props.wordList.length - 1) { wordIndex = 0; }
   }, props.delay)
 })
 
