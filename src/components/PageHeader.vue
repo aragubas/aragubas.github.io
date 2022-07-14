@@ -1,4 +1,14 @@
 <script setup lang="ts">
+import { onMounted } from "@vue/runtime-core";
+
+
+onMounted(() => {
+  // Removes page loader spinner
+  const pageLoader: HTMLElement | null = document.getElementById("app-loading-spinner");
+  if (pageLoader == null) { console.warn("Could not find page spinner"); }
+  pageLoader?.remove();
+
+})
 
 </script>
 
