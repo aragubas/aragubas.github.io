@@ -7,3 +7,13 @@
 {
   gap: .2rem;
 }
+
+.gap-small-m
+{
+  gap: .5rem;
+}
+
+.margin-medium
+{
+  margin: 1rem;
+}

@@ -6,6 +6,67 @@ import IntroCard from '../components/IntroCard.vue';
 <template>
 <div class="wrapper">
   <IntroCard></IntroCard>
+
+  <section class="main-section">
+    <div class="margin-medium">
+      <h2>Software Projects</h2>
+      <p>I have a LOT of repositories uploaded on github. Most of them are WIP or just test. So here are the ones that I'm actually working on/finished</p>
+    </div>
+
+    <section class="project-section">
+      <article class="project-card">
+        <h4 class="title">Portfolio <span class="language-label" language="ts">Typescript</span></h4>
+        <p>Yes, this website's source code is available on github</p>
+        <a href="https://github.com/aragubas/aragubas.github.io" target="_blank" class="button">Github</a>
+      </article>
+ 
+      <article class="project-card">
+        <h4 class="title">Oggly <span class="language-label" language="c++">C++</span></h4>
+        <p>CLI tool for playing .ogg files synchronously</p>
+        <a href="https://github.com/aragubas/Oggly" target="_blank" class="button">Github</a>
+      </article>
+
+      <article class="project-card">
+        <h4 class="title">GDIShot <span class="language-label" language="c++">C++</span></h4>
+        <p><i>(Windows Only)</i> CLI tool for taking screenshots of entire screen</p>
+        <a href="https://github.com/aragubas/GDIshot" target="_blank" class="button">Github</a>
+      </article>
+
+      <article class="project-card">
+        <h4 class="title">ChargerPlugEvent <span class="language-label" language="c#">C#</span></h4>
+        <p><i>(Windows Only)</i> Displays a notification and plays a sound when plugging/unplugging laptop charger</p>
+        <a href="https://github.com/aragubas/ChargerPlugEvent" target="_blank" class="button">Github</a>
+      </article>
+
+      <article class="project-card">
+        <h4 class="title">TNotepad <span class="language-label" language="c#">C#</span></h4>
+        <p><i>(Windows Only)</i> Basic text editor with tabs and ability to pin textfiles in homescreen</p>
+        <a href="https://github.com/aragubas/TNotepad" target="_blank" class="button">Github</a>
+      </article>
+
+      <article class="project-card">
+        <h4 class="title">TaiyouClient <span class="language-label" language="c#">C#</span></h4>
+        <p><i>(WIP)</i> Desktop Client for Taiyou Messaging Platform (work in progress). Made with AvaloniaUI</p>
+        <a href="https://github.com/aragubas/TaiyouClient" target="_blank" class="button">Github</a>
+      </article>
+ 
+      <article class="project-card">
+        <h4 class="title">Taiyou (backend) <span class="language-label" language="ts">Typescript</span></h4>
+        <p><i>(WIP)</i> Backend for Taiyou Messaging Platform (work in progress). Made with Prisma ORM, Express and Socket.IO</p>
+        <a href="https://github.com/aragubas/Taiyou" target="_blank" class="button">Github</a>
+      </article>
+ 
+      <article class="project-card">
+        <h4 class="title">aiajsdkafoefpokwepfdoedpefw <span class="language-label" language="css">CSS</span></h4>
+        <p>????????????????????</p>
+        <div class="flex gap-small-m">
+          <a href="https://github.com/aragubas/aiajsdkafoefpokwepfdoedpefw" target="_blank" class="button">Github</a>
+          <a href="https://aragubas.github.io/aiajsdkafoefpokwepfdoedpefw/" target="_blank" class="button">Website</a>
+        </div>
+      </article>
+      
+    </section>
+  </section>
 </div>
   
 </template>
@@ -18,4 +79,87 @@ import IntroCard from '../components/IntroCard.vue';
   align-items: center;
   padding: 1rem;
 }
+
+.main-section
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section h2
+{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.project-section
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@keyframes project-card-in
+{
+  from { transform: translateY(-5%); opacity: 0; }
+  to { transform: translateY(0%); opacity: 1; }
+}
+ 
+.project-card
+{
+  animation: project-card-in .7s ease;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background: var(--background-separation);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.project-card .title
+{
+  display: inline-flex;
+  align-items: center;
+  gap: .25rem;
+  font-size: 1.5rem;
+  font-family: "Ubuntu";
+  font-weight: normal;
+}
+
+.project-card a.button
+{
+  align-self: flex-start;
+}
+
+.language-label
+{
+  display: block;
+  font-size: .8rem;
+  glyph-orientation-horizontal: 20deg;
+  color: var(--color-faded);
+  padding: .2rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.language-label[language="c++"]
+{
+  background: rgb(30, 104, 160);
+}
+
+.language-label[language="c#"]
+{
+  background: rgb(122, 50, 151);
+}
+
+.language-label[language="ts"]
+{
+  background: rgb(0, 122, 204);
+}
+
+.language-label[language="css"]
+{
+  background: rgb(41, 101, 241);
+}
+
 </style>
