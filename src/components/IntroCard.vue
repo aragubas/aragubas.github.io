@@ -6,7 +6,7 @@ const wordlist: Array<string> = [
   "Web Apps",
   "Games",
   "Illustration/Drawing",
-  "Music (mostly chiptune)",
+  "Music",
   "Photo Editing stuff"
 ]
 
@@ -15,7 +15,7 @@ const wordlist: Array<string> = [
 <template>
   <div id="wrapper">
     <div class="clip-box logo-box">
-      <img src="/aragubas.svg" />
+      <img src="/aragubas.svg" alt="Aragubas Logo" />
     </div>
     <span class="decoration"></span>
     <div class="intro-welcome clip-box">

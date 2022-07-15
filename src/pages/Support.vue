@@ -17,7 +17,7 @@
     </section>
   </div>  
 </template>
-
+ 
 <style scoped>
 #wrapper
 {
