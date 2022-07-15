@@ -10,14 +10,20 @@
       <p id="header-title">Aragubas</p>
     </div>
   </router-link>
+
+  <div class="header-buttons">
+    <router-link to="/support" class="button">Support</router-link>
+  </div>
+
 </div>
 </template>
 
 <style scoped>
 .wrapper
 {
-  padding: .5rem 1rem .5rem 1rem;
+  padding: .5rem 1rem;
   display: flex;
+  justify-content: space-between;
   gap: .5rem;
   align-items: center;
   background-color: var(--background-separation);

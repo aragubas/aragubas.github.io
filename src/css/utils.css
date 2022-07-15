@@ -17,3 +17,8 @@
 {
   margin: 1rem;
 }
+
+.clip-box
+{
+  overflow: hidden;
+} 

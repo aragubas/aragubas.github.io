@@ -161,6 +161,8 @@ import IntroCard from '../components/IntroCard.vue';
   {
     max-width: 90vw;
     box-sizing: border-box;
+    padding: .5rem;
+    border-radius: 8px;
   }
 
   .project-card .title

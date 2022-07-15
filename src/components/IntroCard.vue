@@ -38,19 +38,9 @@ const wordlist: Array<string> = [
   border-radius: 10px;
 }
 
-.clip-box
-{
-  overflow: hidden;
-} 
-
 .logo-box
 {
   display: flex;
-}
-
-.clip-box > *
-{
-  animation: clipbox-animation .5s cubic-bezier(0, 0.5, 0.4, 1.5);
 }
 
 #wrapper img
@@ -67,11 +57,6 @@ const wordlist: Array<string> = [
   width: 2px;
   border-radius: 2px;
   height: inherit;
-}
-
-@keyframes clipbox-animation {
-  from { transform: translateY(100%); opacity: 0; }
-  to { transform: translateY(0%); opacity: 1; }
 }
 
 @keyframes decoration-in
