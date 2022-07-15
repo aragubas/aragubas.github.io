@@ -35,7 +35,7 @@ const wordlist: Array<string> = [
   gap: .5rem; 
   padding: 1rem;
   background: white;
-  border-radius: 10px;
+  border-radius: 10px;  
 }
 
 .logo-box
