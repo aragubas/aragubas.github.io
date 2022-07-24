@@ -64,6 +64,13 @@ import IntroCard from '../components/IntroCard.vue';
           <a href="https://aragubas.github.io/aiajsdkafoefpokwepfdoedpefw/" target="_blank" class="button">Website</a>
         </div>
       </article>
+
+      <article class="project-card">
+        <h4 class="title">PluginManagerExample <span class="language-label" language="c#">C#</span></h4>
+        <p>A CLI shell that works via plugins. The cli processor itself is a plugin so plugins of plugins</p>
+        <p>This project is an example implementation of a Plugin system with Reflection.</p>
+        <a href="https://github.com/aragubas/PluginManagerExample" target="_blank" class="button">Github</a>
+      </article>
       
     </section>
   </section>
