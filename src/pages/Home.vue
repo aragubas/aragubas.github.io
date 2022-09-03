@@ -148,14 +148,15 @@ import IntroCard from '../components/IntroCard.vue';
   align-self: flex-start;
 }
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 640px)
 {
   .project-section
   {
     grid-template-columns: 1fr;
     gap: 1rem;
     box-sizing: border-box;
-    justify-items: center;
+    justify-items: stretch;
+    margin: 0 auto;
   }
  
   .wrapper

@@ -61,7 +61,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 640px)
 {
   .wrapper h1
   {
