@@ -158,7 +158,7 @@ import IntroCard from '../components/IntroCard.vue';
     justify-items: stretch;
     margin: 0 auto;
   }
- 
+
   .wrapper
   {
     align-items: center;
@@ -175,15 +175,21 @@ import IntroCard from '../components/IntroCard.vue';
 
   .project-card .title
   {
-    display: flex;
     flex-direction: column;
-    
   }
-
 
   .main-section
   {
     margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 340px)
+{
+  .main-section h2
+  {
+    font-size: 1.4rem;
   }
 
 }

@@ -20,7 +20,7 @@ const wordlist: Array<string> = [
     <span class="decoration"></span>
     <div class="intro-welcome clip-box">
       <h1>Hello, I'm Aragubas</h1>
-      <div class="flex gap-small">
+      <div class="flex gap-small typewritter">
         <p>I make</p>
         <TypewritterList :word-list="wordlist" :delay="2500"></TypewritterList>
       </div>
@@ -54,9 +54,10 @@ const wordlist: Array<string> = [
 { 
   animation: decoration-in .35s linear;
   background: gray;
-  width: 2px;
+  width: 1px;
   border-radius: 2px;
   height: inherit;
+  opacity: 0.25;
 }
 
 @keyframes decoration-in
@@ -71,15 +72,23 @@ const wordlist: Array<string> = [
   to { transform: translateY(0%) rotate(0deg); opacity: 1; }
 }
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 440px)
 {
   #wrapper h1 { font-size: 1.6rem; }
-  .logo-box { width: 2.8rem; }
-  .ceira-text::after
-  {
-    text-shadow: 0px 0px 1px black;
-  }
+  .logo-box { width: 3rem; }
  
 }
+
+@media screen and (max-width: 350px)
+{
+  #wrapper h1 { font-size: 1.2rem; }
+  .logo-box { width: 2.2rem; }
+  
+  .typewritter 
+  {
+    font-size: 0.8rem;
+  }
+}
+
 
 </style>

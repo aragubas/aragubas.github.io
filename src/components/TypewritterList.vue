@@ -67,7 +67,7 @@ onMounted(() => {
  
 .wrapper
 {
-  font-size: 1rem;
+  font-size: inherit;
   padding: 0px;
 }
 

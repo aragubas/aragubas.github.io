@@ -8,6 +8,7 @@
      
     <section>
       <h4 class="title">Contact me</h4>
+      
       <ul class="flex gap-small-m">
         <li><a href="mailto://vaiogames18@gmail.com" target="_blank">Email</a></li>
         <li><a href="https://t.me/aragubas" target="_blank">Telegram</a></li>
@@ -27,7 +28,7 @@
   gap: .5rem;
   align-items: flex-start;
   background-color: var(--background-separation);
-  height: 4rem;
+  /* height: 4rem; */
 }
 
 q 
@@ -42,4 +43,18 @@ section .title
   padding: .2rem 0rem;
   font-family: "Ubuntu";
 }
+
+@media screen and (max-width: 400px)
+{
+  q
+  {
+    font-size: .8rem;
+  }
+
+  ul
+  {
+    flex-direction: column;
+  }
+}
+
 </style>
