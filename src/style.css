@@ -3,29 +3,34 @@
 @import url("css/clip-box.css");
 @import url("css/css-reset.css");
 
-/* :root
-{
-  --page-background: rgb(245, 245, 245);
-  --background-separation: rgb(255, 255, 255);
-  --background-control: rgb(230, 230, 230);
-  --background-decoration: rgb(250, 250, 250);
-  --background-control-active: rgb(200, 200, 200);
-  --color-faded: rgb(15, 15, 15);
-  --color-normal: rgb(5, 5, 5);
-  --color-active: rgb(3, 3, 3);
-} */
-
 :root
 {
   --page-background: rgb(255, 255, 255);
   --background-separation: rgb(245, 245, 245);
   --border-semitransparent: rgba(50, 50, 50, 0.5);
   --background-control: rgb(230, 230, 230);
-  --background-decoration: rgb(250, 250, 250);
   --background-control-active: rgb(200, 200, 200);
   --color-faded: rgb(15, 15, 15);
   --color-normal: rgb(5, 5, 5);
   --color-active: rgb(3, 3, 3);
+  --color-link: rgb(0, 0, 0);
+}
+
+@media (prefers-color-scheme: dark)
+{
+  :root
+  {
+    --page-background: rgb(30, 40, 47);
+    --background-separation: rgb(50, 60, 67);
+    --border-semitransparent: rgba(150, 150, 167, 0.5);
+    --background-control: rgb(70, 80, 87);
+    --background-control-active: rgb(90, 100, 107);
+    --color-faded: rgb(200, 200, 200);
+    --color-normal: rgb(238, 238, 238);
+    --color-active: rgb(255, 255, 255);
+    --color-link: rgb(255, 255, 255);
+  }
+   
 }
 
 body

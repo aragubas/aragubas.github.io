@@ -22,3 +22,8 @@
 {
   overflow: hidden;
 } 
+
+a:link, a:visited
+{
+  color: var(--color-link);
+}
