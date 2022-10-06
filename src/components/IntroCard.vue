@@ -34,10 +34,10 @@ const wordlist: Array<string> = [
   display: flex;
   gap: .5rem; 
   padding: 1rem;
-  background: white;
+  background: var(--background-separation);
   border-radius: 10px;  
 }
-
+ 
 .logo-box
 {
   display: flex;
@@ -53,7 +53,7 @@ const wordlist: Array<string> = [
 #wrapper span.decoration
 { 
   animation: decoration-in .35s linear;
-  background: gray;
+  background: var(--border-semitransparent);
   width: 1px;
   border-radius: 2px;
   height: inherit;
