@@ -15,7 +15,7 @@
         <li><p>Discord: Aragubas#3594</p></li>
       </ul>
     </section>
- 
+  
   </div>
 </template>
 
@@ -29,6 +29,9 @@
   align-items: flex-start;
   background-color: var(--background-separation);
   /* height: 4rem; */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
 }
 
 q 

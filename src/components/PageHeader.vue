@@ -28,6 +28,8 @@
   align-items: center;
   background-color: var(--background-separation);
   height: 1.8rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .logo-box

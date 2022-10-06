@@ -3,10 +3,22 @@
 @import url("css/clip-box.css");
 @import url("css/css-reset.css");
 
-:root
+/* :root
 {
   --page-background: rgb(245, 245, 245);
   --background-separation: rgb(255, 255, 255);
+  --background-control: rgb(230, 230, 230);
+  --background-decoration: rgb(250, 250, 250);
+  --background-control-active: rgb(200, 200, 200);
+  --color-faded: rgb(15, 15, 15);
+  --color-normal: rgb(5, 5, 5);
+  --color-active: rgb(3, 3, 3);
+} */
+
+:root
+{
+  --page-background: rgb(255, 255, 255);
+  --background-separation: rgb(245, 245, 245);
   --background-control: rgb(230, 230, 230);
   --background-decoration: rgb(250, 250, 250);
   --background-control-active: rgb(200, 200, 200);
