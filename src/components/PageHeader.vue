@@ -59,6 +59,7 @@ onUnmounted(() => {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  opacity: 0.99;
 }
 
 .logo-box
