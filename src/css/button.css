@@ -6,6 +6,9 @@
   padding: .3rem .8rem;
   border-radius: 4px;
   color: var(--color-normal);
+  border-width: 1px;
+  border-style: inset;
+  border-color: var(--color-boundary-border);
 }
 
 .button:active

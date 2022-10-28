@@ -36,6 +36,9 @@ const wordlist: Array<string> = [
   padding: 1rem;
   background: var(--background-separation);
   border-radius: 10px;  
+  border-width: 1px;
+  border-style: inset;
+  border-color: var(--color-boundary-border);
 }
  
 .logo-box
@@ -53,7 +56,7 @@ const wordlist: Array<string> = [
 #wrapper span.decoration
 { 
   animation: decoration-in .35s linear;
-  background: var(--border-semitransparent);
+  background: var(--color-decoration);
   width: 1px;
   border-radius: 2px;
   height: inherit;

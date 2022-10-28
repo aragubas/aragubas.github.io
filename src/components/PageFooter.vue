@@ -31,7 +31,9 @@
   /* height: 4rem; */
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-
+  border-top-width: 1px;
+  border-top-style: inset;
+  border-top-color: var(--color-boundary-border);
 }
 
 q 

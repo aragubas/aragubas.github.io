@@ -125,6 +125,9 @@ import IntroCard from '../components/IntroCard.vue';
   background: var(--background-separation);
   padding: 1rem;
   border-radius: 4px;
+  border-width: 1px;
+  border-style: inset;
+  border-color: var(--color-boundary-border);
 }
 
 .project-card i
