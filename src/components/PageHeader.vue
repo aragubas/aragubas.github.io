@@ -52,9 +52,6 @@ onUnmounted(() => {
   position: sticky;
   top: 0;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  border-bottom-width: 1px;
-  border-bottom-style: inset;
-  border-bottom-color: var(--color-boundary-border);
 }
 
 .wrapper.active
@@ -63,7 +60,6 @@ onUnmounted(() => {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   opacity: 0.99;
-  border-bottom-width: 0px;
 }
 
 .logo-box
