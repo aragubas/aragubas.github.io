@@ -1,17 +1,18 @@
 <script setup lang="ts">
-import { ref } from '@vue/reactivity';
-import TypewritterList from './TypewritterList.vue';
- 
+import { ref } from "@vue/reactivity";
+import TypewritterList from "./TypewritterList.vue";
+
 const wordlist: Array<string> = [
   "Web Apps",
   "Games",
-  "Illustration/Drawing",
-  "Music",
-  "Photo Editing stuff"
-]
-
+  "Libraries",
+  "CLI Utilities",
+  "Videos",
+  "Script Languages",
+  "Bwah",
+];
 </script>
- 
+
 <template>
   <div id="wrapper">
     <div class="clip-box logo-box">
@@ -29,33 +30,31 @@ const wordlist: Array<string> = [
 </template>
 
 <style scoped>
-#wrapper
-{
+#wrapper {
   display: flex;
-  gap: .5rem; 
+  gap: 0.5rem;
   padding: 1rem;
   background: var(--background-separation);
-  border-radius: 10px;  
+  border-radius: 10px;
   border-width: 1px;
   border-style: inset;
   border-color: var(--color-boundary-border);
 }
- 
-.logo-box
-{
+
+.logo-box {
   display: flex;
 }
 
-#wrapper img
-{
-  animation: logo-in .5s cubic-bezier(0, 0.5, 0.43, 1);
+#wrapper img {
+  animation: logo-in 0.5s cubic-bezier(0, 0.5, 0.43, 1);
 }
 
-#wrapper h1 { font-size: 2rem; }
+#wrapper h1 {
+  font-size: 2rem;
+}
 
-#wrapper span.decoration
-{ 
-  animation: decoration-in .35s linear;
+#wrapper span.decoration {
+  animation: decoration-in 0.35s linear;
   background: var(--color-decoration);
   width: 1px;
   border-radius: 2px;
@@ -63,35 +62,45 @@ const wordlist: Array<string> = [
   opacity: 0.25;
 }
 
-@keyframes decoration-in
-{
-  from { transform: scaleY(0%); }
-  to { transform: scaleY(100%); }
-}
-
-@keyframes logo-in
-{
-  from { transform: translateY(100%) rotate(180deg); opacity: 0; }
-  to { transform: translateY(0%) rotate(0deg); opacity: 1; }
-}
-
-@media screen and (max-width: 440px)
-{
-  #wrapper h1 { font-size: 1.6rem; }
-  .logo-box { width: 3rem; }
- 
-}
-
-@media screen and (max-width: 350px)
-{
-  #wrapper h1 { font-size: 1.2rem; }
-  .logo-box { width: 2.2rem; }
-  
-  .typewritter 
-  {
-    font-size: 0.8rem;
+@keyframes decoration-in {
+  from {
+    transform: scaleY(0%);
+  }
+  to {
+    transform: scaleY(100%);
   }
 }
 
+@keyframes logo-in {
+  from {
+    transform: translateY(100%) rotate(180deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%) rotate(0deg);
+    opacity: 1;
+  }
+}
 
+@media screen and (max-width: 440px) {
+  #wrapper h1 {
+    font-size: 1.6rem;
+  }
+  .logo-box {
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #wrapper h1 {
+    font-size: 1.2rem;
+  }
+  .logo-box {
+    width: 2.2rem;
+  }
+
+  .typewritter {
+    font-size: 0.8rem;
+  }
+}
 </style>

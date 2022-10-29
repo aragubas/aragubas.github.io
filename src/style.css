@@ -25,11 +25,12 @@
     --background-separation: rgb(50, 60, 67);
     --background-control: rgb(70, 80, 87);
     --background-control-active: rgb(90, 100, 107);
-    --color-decoration: rgba(150, 150, 167, 0.5);
+    --color-decoration: rgba(150, 150, 167, 0.75);
     --color-faded: rgb(200, 200, 200);
     --color-normal: rgb(238, 238, 238);
     --color-active: rgb(255, 255, 255);
     --color-link: rgb(255, 255, 255);
+    --color-boundary-border: rgba(255, 255, 255, 0.025);
   }
    
 }
