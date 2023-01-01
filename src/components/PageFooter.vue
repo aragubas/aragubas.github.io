@@ -3,7 +3,7 @@ import { ref } from "@vue/reactivity";
 </script>
 
 <template>
-  <div id="wrapper">
+  <footer id="wrapper">
     <q>The essential is invisible to the eye</q>
 
     <section>
@@ -17,7 +17,17 @@ import { ref } from "@vue/reactivity";
         <li><p>Discord: Aragubas#3594</p></li>
       </ul>
     </section>
-  </div>
+
+    <section id="social-links">
+      <h4 class="title">Social</h4>
+
+      <ul class="flex gap-small-m">
+        <li><a href="https://youtube.com/@aragubas" target="_blank">Youtube</a></li>
+        <li><a href="https://twitter.com/Aragubas_" target="_blank">Twitter</a></li>
+        <li><a href="https://www.furaffinity.net/user/aragubas" target="_blank">Furaffinity</a></li>
+      </ul>
+    </section>
+  </footer>
 </template>
 
 <style scoped>
@@ -39,6 +49,7 @@ import { ref } from "@vue/reactivity";
 q {
   font-family: "Inter";
   font-style: italic;
+  color: var(--color-faded);
 }
 
 section .title {
@@ -54,6 +65,10 @@ section .title {
 
   ul {
     flex-direction: column;
+  }
+
+  section#social-links ul {
+    flex-direction: row;
   }
 }
 </style>

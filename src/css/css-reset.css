@@ -1,17 +1,30 @@
-p, h1, h2, h3, h4, h5, h6
-{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
-ol, ul
-{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ol,
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li
-{
+li {
   margin: 0;
   padding: 0;
 }

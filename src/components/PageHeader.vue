@@ -21,12 +21,7 @@ onUnmounted(() => {
   <div class="wrapper" :class="{ active: headerShadow }">
     <router-link to="/">
       <div class="logo-box">
-        <img
-          src="/aragubas.svg"
-          id="header-logo"
-          aria-labelledby="header-title"
-          alt="Aragubas Logo"
-        />
+        <img src="/aragubas.svg" id="header-logo" aria-labelledby="header-title" alt="Aragubas Logo" />
         <p id="header-title">Aragubas</p>
       </div>
     </router-link>
@@ -39,8 +34,7 @@ onUnmounted(() => {
 
 <style scoped>
 .wrapper {
-  transition: box-shadow 0.25s,
-    border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: box-shadow 0.25s, border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;

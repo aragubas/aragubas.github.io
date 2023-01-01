@@ -10,8 +10,8 @@ import IntroCard from "../components/IntroCard.vue";
       <div class="margin-medium">
         <h2>Software Projects</h2>
         <p>
-          I have a LOT of repositories on github. Most of them are WIP or just
-          test. So here are the ones that I'm actually working on/finished
+          I have a LOT of repositories on github. Most of them are WIP or just test. So here are the ones that I'm
+          actually working on/finished
         </p>
       </div>
 
@@ -22,25 +22,13 @@ import IntroCard from "../components/IntroCard.vue";
             <span class="language-label" language="ts">Typescript</span>
           </h4>
           <p>Yes, this website's source code is available on github</p>
-          <a
-            href="https://github.com/aragubas/aragubas.github.io"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
+          <a href="https://github.com/aragubas/aragubas.github.io" target="_blank" class="button">Github</a>
         </article>
 
         <article class="project-card">
-          <h4 class="title">
-            Oggly <span class="language-label" language="c++">C++</span>
-          </h4>
+          <h4 class="title">Oggly <span class="language-label" language="c++">C++</span></h4>
           <p>CLI tool for playing .ogg files synchronously</p>
-          <a
-            href="https://github.com/aragubas/Oggly"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
+          <a href="https://github.com/aragubas/Oggly" target="_blank" class="button">Github</a>
         </article>
 
         <article class="project-card">
@@ -49,32 +37,14 @@ import IntroCard from "../components/IntroCard.vue";
             <span class="language-label" language="c++">C++</span>
           </h4>
           <p>CLI tool for compiling tcfg file</p>
-          <p>
-            TaiyouConfig is a custom file format for storing data in a
-            namespace:name format.
-          </p>
-          <a
-            href="https://github.com/aragubas/TaiyouConfig"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
+          <p>TaiyouConfig is a custom file format for storing data in a namespace:name format.</p>
+          <a href="https://github.com/aragubas/TaiyouConfig" target="_blank" class="button">Github</a>
         </article>
 
         <article class="project-card">
-          <h4 class="title">
-            GDIShot <span class="language-label" language="c++">C++</span>
-          </h4>
-          <p>
-            <i>(Windows Only)</i> CLI tool for taking screenshots of the entire
-            screen
-          </p>
-          <a
-            href="https://github.com/aragubas/GDIshot"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
+          <h4 class="title">GDIShot <span class="language-label" language="c++">C++</span></h4>
+          <p><i>(Windows Only)</i> CLI tool for taking screenshots of the entire screen</p>
+          <a href="https://github.com/aragubas/GDIshot" target="_blank" class="button">Github</a>
         </article>
 
         <article class="project-card">
@@ -82,48 +52,20 @@ import IntroCard from "../components/IntroCard.vue";
             ChargerPlugEvent
             <span class="language-label" language="c#">C#</span>
           </h4>
-          <p>
-            <i>(Windows Only)</i> Displays a notification and plays a sound when
-            plugging/unplugging laptop charger
-          </p>
-          <a
-            href="https://github.com/aragubas/ChargerPlugEvent"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
+          <p><i>(Windows Only)</i> Displays a notification and plays a sound when plugging/unplugging laptop charger</p>
+          <a href="https://github.com/aragubas/ChargerPlugEvent" target="_blank" class="button">Github</a>
         </article>
 
         <article class="project-card">
-          <h4 class="title">
-            TNotepad <span class="language-label" language="c#">C#</span>
-          </h4>
-          <p>
-            <i>(Windows Only)</i> Basic text editor with tabs and ability to pin
-            textfiles in homescreen
-          </p>
-          <a
-            href="https://github.com/aragubas/TNotepad"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
+          <h4 class="title">TNotepad <span class="language-label" language="c#">C#</span></h4>
+          <p><i>(Windows Only)</i> Basic text editor with tabs and ability to pin textfiles in homescreen</p>
+          <a href="https://github.com/aragubas/TNotepad" target="_blank" class="button">Github</a>
         </article>
 
         <article class="project-card">
-          <h4 class="title">
-            TaiyouClient <span class="language-label" language="c#">C#</span>
-          </h4>
-          <p>
-            <i>(WIP)</i> Desktop Client for Taiyou Messaging Platform (work in
-            progress). Made with AvaloniaUI
-          </p>
-          <a
-            href="https://github.com/aragubas/TaiyouClient"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
+          <h4 class="title">TaiyouClient <span class="language-label" language="c#">C#</span></h4>
+          <p><i>(WIP)</i> Desktop Client for Taiyou Messaging Platform (work in progress). Made with AvaloniaUI</p>
+          <a href="https://github.com/aragubas/TaiyouClient" target="_blank" class="button">Github</a>
         </article>
 
         <article class="project-card">
@@ -132,35 +74,18 @@ import IntroCard from "../components/IntroCard.vue";
             <span class="language-label" language="ts">Typescript</span>
           </h4>
           <p>
-            <i>(WIP)</i> Backend for Taiyou Messaging Platform (work in
-            progress). Made with Prisma ORM, Express and Socket.IO
+            <i>(WIP)</i> Backend for Taiyou Messaging Platform (work in progress). Made with Prisma ORM, Express and
+            Socket.IO
           </p>
-          <a
-            href="https://github.com/aragubas/Taiyou"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
+          <a href="https://github.com/aragubas/Taiyou" target="_blank" class="button">Github</a>
         </article>
 
         <article class="project-card">
-          <h4 class="title">
-            🗣<span class="language-label" language="css">CSS</span>
-          </h4>
+          <h4 class="title">🗣<span class="language-label" language="css">CSS</span></h4>
           <p>aiajsdkafoefpokwepfdoedpefw</p>
           <div class="flex gap-small-m">
-            <a
-              href="https://github.com/aragubas/aiajsdkafoefpokwepfdoedpefw"
-              target="_blank"
-              class="button"
-              >Github</a
-            >
-            <a
-              href="https://aragubas.github.io/aiajsdkafoefpokwepfdoedpefw/"
-              target="_blank"
-              class="button"
-              >Website</a
-            >
+            <a href="https://github.com/aragubas/aiajsdkafoefpokwepfdoedpefw" target="_blank" class="button">Github</a>
+            <a href="https://aragubas.github.io/aiajsdkafoefpokwepfdoedpefw/" target="_blank" class="button">Website</a>
           </div>
         </article>
 
@@ -169,20 +94,9 @@ import IntroCard from "../components/IntroCard.vue";
             PluginManagerExample
             <span class="language-label" language="c#">C#</span>
           </h4>
-          <p>
-            A CLI shell that works via plugins. The cli processor itself is a
-            plugin so plugins of plugins
-          </p>
-          <p>
-            This project is an example implementation of a Plugin system with
-            Reflection.
-          </p>
-          <a
-            href="https://github.com/aragubas/PluginManagerExample"
-            target="_blank"
-            class="button"
-            >Github</a
-          >
+          <p>A CLI shell that works via plugins. The cli processor itself is a plugin so plugins of plugins</p>
+          <p>This project is an example implementation of a Plugin system with Reflection.</p>
+          <a href="https://github.com/aragubas/PluginManagerExample" target="_blank" class="button">Github</a>
         </article>
       </section>
     </section>
@@ -235,7 +149,7 @@ import IntroCard from "../components/IntroCard.vue";
   gap: 0.5rem;
   background: var(--background-separation);
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 6px;
   border-width: 1px;
   border-style: inset;
   border-color: var(--color-boundary-border);
