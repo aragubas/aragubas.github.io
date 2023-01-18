@@ -7,7 +7,7 @@
         <h1 class="title">Support!</h1>
       </div>
       <p>
-        I accept donations internationally trough
+        I accept donations internationally through
         <a href="https://www.buymeacoffee.com/aragubas" target="_black"
           >Buy me a coffee</a
         >
