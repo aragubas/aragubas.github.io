@@ -23,7 +23,6 @@ import { ref } from "@vue/reactivity";
 
       <ul class="flex gap-small-m">
         <li><a href="https://youtube.com/@aragubas" target="_blank">Youtube</a></li>
-        <li><a href="https://twitter.com/Aragubas_" target="_blank">Twitter</a></li>
         <li><a href="https://www.furaffinity.net/user/aragubas" target="_blank">Furaffinity</a></li>
       </ul>
     </section>
