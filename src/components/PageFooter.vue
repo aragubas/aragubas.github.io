@@ -6,33 +6,60 @@ import { ref } from "@vue/reactivity";
   <footer id="wrapper">
     <q>The essential is invisible to the eye</q>
 
-    <section>
+    <section id="contact-links">
       <h4 class="title">Contact me</h4>
 
-      <ul class="flex gap-small-m">
+      <ul class="flex gap-small-m link-list">
         <li>
+          <font-awesome-icon icon="fa-solid fa-inbox" />
           <a href="mailto://vaiogames18@gmail.com" target="_blank">Email</a>
         </li>
-        <li><a href="https://t.me/aragubas" target="_blank">Telegram</a></li>
-        <li><p>Discord: Aragubas#3594</p></li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-telegram" />
+          <a href="https://t.me/aragubas" target="_blank">Telegram</a>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-linkedin" />
+          <a href="https://www.linkedin.com/in/paulo-otavio-lima-357344264/" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-discord" />
+          <a href="discord.com/users/678368118371778570" target="_blank">Discord</a>
+        </li>
       </ul>
     </section>
 
     <section id="social-links">
       <h4 class="title">Social</h4>
 
-      <ul class="flex gap-small-m">
-        <li><a href="https://youtube.com/@aragubas" target="_blank">Youtube</a></li>
-        <li><a href="https://www.furaffinity.net/user/aragubas" target="_blank">Furaffinity</a></li>
-        <li><a href="https://pawb.fun/@aragubas" target="_blank">Mastodon</a></li>
+      <ul class="flex gap-small-m link-list">
+        <li>
+          <font-awesome-icon icon="fa-brands fa-youtube" />
+          <a href="https://youtube.com/@aragubas" target="_blank">Youtube</a>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-solid fa-paw" />
+          <a href="https://www.furaffinity.net/user/aragubas" target="_blank">Furaffinity</a>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-mastodon" />
+          <a href="https://pawb.fun/@aragubas" target="_blank">Mastodon</a>
+        </li>
       </ul>
+    </section>
+
+    <section>
+      <p>Made with VueJS using the <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> library!</p>
+      <p>
+        Source code available at: <a href="https://github.com/aragubas/aragubas.github.io" target="_blank">Github!</a>
+      </p>
     </section>
   </footer>
 </template>
 
 <style scoped>
 #wrapper {
-  padding: 2rem 1rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -58,17 +85,14 @@ section .title {
   font-family: "Ubuntu";
 }
 
-@media screen and (max-width: 400px) {
-  q {
-    font-size: 0.8rem;
-  }
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  ul {
-    flex-direction: column;
-  }
-
-  section#social-links ul {
-    flex-direction: row;
-  }
+.link-list li {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
 }
 </style>
