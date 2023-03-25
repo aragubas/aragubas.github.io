@@ -22,7 +22,7 @@ import { ref } from "@vue/reactivity";
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-discord" />
-          <a href="discord.com/users/678368118371778570" target="_blank">Discord</a>
+          <a href="https://discord.com/users/678368118371778570" target="_blank">Discord</a>
         </li>
       </ul>
     </section>
@@ -41,7 +41,7 @@ import { ref } from "@vue/reactivity";
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-mastodon" />
-          <a href="https://pawb.fun/@aragubas" target="_blank">Mastodon</a>
+          <a href="https://pawb.fun/@aragubas" target="_blank">Mastodon (@pawb.fun)</a>
         </li>
       </ul>
     </section>

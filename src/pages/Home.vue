@@ -21,7 +21,7 @@ import IntroCard from "../components/IntroCard.vue";
             Portfolio
             <span class="language-label" language="ts">Typescript</span>
           </h4>
-          <p>Yes, this website's source code is available on github</p>
+          <p>The exact website you are in right now!</p>
           <a href="https://github.com/aragubas/aragubas.github.io" target="_blank" class="button">Github</a>
         </article>
 

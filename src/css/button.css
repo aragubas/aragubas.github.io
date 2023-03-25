@@ -1,3 +1,9 @@
+/* Fixes 'a' buttons */
+a.button:link,
+a.button:visited {
+  color: var(--color-normal);
+}
+
 .button {
   display: block;
   text-decoration: none;
@@ -10,7 +16,19 @@
   border-color: var(--color-boundary-border);
 }
 
+.button:hover {
+  background-color: var(--background-control-hover);
+  border-color: var(--color-boundary-border-hover);
+}
+
 .button:active {
   background-color: var(--background-control-active);
+  border-color: var(--color-boundary-border-active);
+  color: var(--color-active);
+}
+
+/* Fixes 'a' buttons */
+a.button:link:active,
+a.button:visited:active {
   color: var(--color-active);
 }

@@ -1,13 +1,14 @@
 @import url("css/utils.css");
-@import url("css/button.css");
 @import url("css/clip-box.css");
 @import url("css/css-reset.css");
+@import url("css/button.css");
 
 :root {
   --page-background: rgb(255, 255, 255);
   --background-separation: rgb(245, 245, 245);
   --background-control: rgb(230, 230, 230);
-  --background-control-active: rgb(200, 200, 200);
+  --background-control-hover: rgb(225, 225, 225);
+  --background-control-active: rgb(220, 220, 220);
 
   --color-decoration: rgba(50, 50, 50, 0.5);
   --color-faded: rgb(150, 150, 150);
@@ -16,6 +17,8 @@
   --color-titles: rgb(5, 5, 5);
   --color-active: rgb(3, 3, 3);
   --color-boundary-border: rgba(0, 0, 0, 0.03);
+  --color-boundary-border-hover: rgba(0, 0, 0, 0.04);
+  --color-boundary-border-active: rgba(0, 0, 0, 0.07);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,6 +26,7 @@
     --page-background: rgb(30, 40, 47);
     --background-separation: rgb(50, 60, 67);
     --background-control: rgb(70, 80, 87);
+    --background-control-hover: rgb(80, 90, 97);
     --background-control-active: rgb(90, 100, 107);
 
     --color-decoration: rgba(150, 150, 167, 0.75);
@@ -31,7 +35,9 @@
     --color-link: rgb(235, 235, 235);
     --color-titles: rgb(250, 250, 250);
     --color-active: rgb(255, 255, 255);
-    --color-boundary-border: rgba(255, 255, 255, 0.025);
+    --color-boundary-border: rgba(255, 255, 255, 0.035);
+    --color-boundary-border-hover: rgba(255, 255, 255, 0.04);
+    --color-boundary-border-active: rgba(255, 255, 255, 0.07);
   }
 }
 
