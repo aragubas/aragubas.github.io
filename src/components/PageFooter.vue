@@ -4,8 +4,6 @@ import { ref } from "@vue/reactivity";
 
 <template>
   <footer id="wrapper">
-    <q>The essential is invisible to the eye</q>
-
     <section id="contact-links">
       <h4 class="title">Contact me</h4>
 
@@ -54,6 +52,8 @@ import { ref } from "@vue/reactivity";
         Source code available at: <a href="https://github.com/aragubas/aragubas.github.io" target="_blank">Github!</a>
       </p>
     </section>
+
+    <q>The essential is invisible to the eye</q>
   </footer>
 </template>
 
