@@ -10,7 +10,7 @@ import { ref } from "@vue/reactivity";
       <ul class="flex gap-small-m link-list">
         <li>
           <font-awesome-icon icon="fa-solid fa-inbox" />
-          <a href="mailto://vaiogames18@gmail.com" target="_blank">Email</a>
+          <a href="mailto:vaiogames18@gmail.com" target="_blank">Email</a>
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-telegram" />
@@ -41,13 +41,29 @@ import { ref } from "@vue/reactivity";
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-mastodon" />
-          <a href="https://pawb.fun/@aragubas" target="_blank">Mastodon (@pawb.fun)</a>
+          <a href="https://pawb.fun/@aragubas" target="_blank">Mastodon (pawb.fun)</a>
         </li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-mastodon" />
+          <a href="https://furry.engineer/@aragubas" target="_blank">Mastodon (furry.engineer)</a>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-twitter" />
+          <a href="https://twitter.com/Aragubas_" target="_blank">@aragubas_</a>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-instagram" />
+          <a href="https://www.instagram.com/aragubas" target="_blank">@aragubas</a>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-tiktok" />
+          <a href="https://www.tiktok.com/@aragubas" target="_blank">@aragubas</a>
+        </li>        
       </ul>
     </section>
 
     <section>
-      <p>Made with VueJS using the <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> library!</p>
+      <p>Made with <a href="https://vuejs.org/">VueJS</a> using the <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> library!</p>
       <p>
         Source code available at: <a href="https://github.com/aragubas/aragubas.github.io" target="_blank">Github!</a>
       </p>
@@ -80,7 +96,7 @@ q {
 }
 
 section .title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 0.2rem 0rem;
   font-family: "Ubuntu";
 }

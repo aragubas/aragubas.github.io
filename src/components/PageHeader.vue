@@ -50,8 +50,9 @@ onUnmounted(() => {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
+/* When shadow is visible */
 .wrapper.active {
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   opacity: 0.99;

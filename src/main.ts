@@ -5,10 +5,11 @@ import App from "./App.vue";
 import Homepage from "./pages/Home.vue";
 import Support from "./pages/Support.vue";
 import PageNotFound from "./pages/PageNotFound.vue";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faLinkedin, faTelegram, faDiscord, faYoutube, faMastodon } from "@fortawesome/free-brands-svg-icons";
-import { faPaw, faInbox } from "@fortawesome/free-solid-svg-icons";
+import {library} from "@fortawesome/fontawesome-svg-core";
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import {faLinkedin, faTelegram, faDiscord, faYoutube, faMastodon, 
+        faTwitter, faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {faPaw, faInbox} from "@fortawesome/free-solid-svg-icons";
 
 const routes: Array<RouteRecordRaw> = [
   { path: "/:pathMatch(.*)*", component: PageNotFound, name: "NotFound" },
@@ -24,7 +25,8 @@ const router = createRouter({
 const app = createApp(App);
 
 // Add Icons
-library.add(faLinkedin, faTelegram, faDiscord, faYoutube, faMastodon, faPaw, faInbox);
+library.add(faLinkedin, faTelegram, faDiscord, faYoutube, faMastodon, 
+            faPaw, faInbox, faTwitter, faTiktok, faInstagram);
 
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.use(router);

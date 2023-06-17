@@ -7,13 +7,13 @@ import IntroCard from "../components/IntroCard.vue";
     <IntroCard></IntroCard>
 
     <section class="main-section">
-      <div class="margin-medium">
-        <h2>Software Projects</h2>
+      <header class="margin-medium">
+        <h2>Projects</h2>
         <p>
           I have a LOT of repositories on github. Most of them are WIP or just test. So here are the ones that I'm
-          actually working on/finished
+          actually working on/finished. I also have a lot of repositories that are private so this is not all of them
         </p>
-      </div>
+      </header>
 
       <section class="project-section">
         <article class="project-card">
@@ -36,7 +36,7 @@ import IntroCard from "../components/IntroCard.vue";
             TaiyouConfig Compiler
             <span class="language-label" language="c++">C++</span>
           </h4>
-          <p>CLI tool for compiling tcfg file</p>
+          <p>CLI tool for compiling tcfg files</p>
           <p>TaiyouConfig is a custom file format for storing data in a namespace:name format.</p>
           <a href="https://github.com/aragubas/TaiyouConfig" target="_blank" class="button">Github</a>
         </article>
@@ -126,7 +126,8 @@ import IntroCard from "../components/IntroCard.vue";
 
 .project-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
   gap: 1rem;
   text-align: start;
 }
@@ -173,6 +174,34 @@ import IntroCard from "../components/IntroCard.vue";
   align-self: flex-start;
 }
 
+.language-label {
+  display: block;
+  font-size: 0.8rem;
+  glyph-orientation-horizontal: 20deg;
+  color: var(--color-faded);
+  padding: 0.2rem;
+  border-radius: 4px;
+  color: white;
+  box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.language-label[language="c++"] {
+  background: rgb(30, 104, 160);
+}
+
+.language-label[language="c#"] {
+  background: rgb(122, 50, 151);
+}
+
+.language-label[language="ts"] {
+  background: rgb(0, 122, 204);
+}
+
+.language-label[language="css"] {
+  background: rgb(41, 101, 241);
+}
+
+/* For mobile */
 @media screen and (max-width: 640px) {
   .project-section {
     grid-template-columns: 1fr;
@@ -203,36 +232,26 @@ import IntroCard from "../components/IntroCard.vue";
   }
 }
 
+/* For Mobile (Adjusts title size) */
 @media screen and (max-width: 340px) {
   .main-section h2 {
     font-size: 1.4rem;
   }
 }
 
-.language-label {
-  display: block;
-  font-size: 0.8rem;
-  glyph-orientation-horizontal: 20deg;
-  color: var(--color-faded);
-  padding: 0.2rem;
-  border-radius: 4px;
-  color: white;
-  box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
+/* For big screens (tested on 1600x900) */
+@media screen and (min-width: 1280px) {
+  .project-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main-section {
+    max-width: 1200px;
+  }
+
+  .main-section h2 {
+    font-size: 2.5rem;
+  }
 }
 
-.language-label[language="c++"] {
-  background: rgb(30, 104, 160);
-}
-
-.language-label[language="c#"] {
-  background: rgb(122, 50, 151);
-}
-
-.language-label[language="ts"] {
-  background: rgb(0, 122, 204);
-}
-
-.language-label[language="css"] {
-  background: rgb(41, 101, 241);
-}
 </style>

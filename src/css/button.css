@@ -9,7 +9,7 @@ a.button:visited {
   text-decoration: none;
   background-color: var(--background-control);
   padding: 0.15rem 0.6rem;
-  border-radius: 4px;
+  border-radius: 6px;
   color: var(--color-normal);
   border-width: 1px;
   border-style: inset;
@@ -27,8 +27,14 @@ a.button:visited {
   color: var(--color-active);
 }
 
-/* Fixes 'a' buttons */
+/* Fixes 'a' buttons active */
 a.button:link:active,
 a.button:visited:active {
   color: var(--color-active);
+}
+
+/* Fixes 'a' buttons hover */
+a.button:link:hover,
+a.button:visited:hover {
+  text-decoration: none;
 }

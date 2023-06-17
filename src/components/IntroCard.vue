@@ -4,11 +4,11 @@ import TypewritterList from "./TypewritterList.vue";
 
 const wordlist: Array<string> = [
   "Web Apps",
-  "Games",
+  "Backends",
   "Libraries",
   "CLI Utilities",
-  "Videos",
-  "Script Languages",
+  "Games",
+  "Utility Scripts",
   "Bwah",
 ];
 </script>
@@ -23,7 +23,7 @@ const wordlist: Array<string> = [
       <h1>Hello, I'm Aragubas</h1>
       <div class="flex gap-small typewritter">
         <p>I make</p>
-        <TypewritterList :word-list="wordlist" :delay="2500"></TypewritterList>
+        <TypewritterList :word-list="wordlist" :delay="3500"></TypewritterList>
       </div>
     </div>
   </div>
