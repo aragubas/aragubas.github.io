@@ -63,9 +63,12 @@ import { ref } from "@vue/reactivity";
     </section>
 
     <section>
-      <p>Made with <a href="https://vuejs.org/">VueJS</a> using the <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> library!</p>
+      <p>Made with <a href="https://vuejs.org/" target="_blank">VueJS</a> using the <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> library!</p>
       <p>
-        Source code available at: <a href="https://github.com/aragubas/aragubas.github.io" target="_blank">Github!</a>
+        Source code available at <a href="https://github.com/aragubas/aragubas.github.io" target="_blank">Github</a>!
+      </p>
+      <p>
+        Bwah!
       </p>
     </section>
 

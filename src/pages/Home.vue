@@ -124,6 +124,10 @@ import IntroCard from "../components/IntroCard.vue";
   font-size: 2rem;
 }
 
+.main-section header {
+  margin-top: 0.5rem;
+}
+
 .project-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

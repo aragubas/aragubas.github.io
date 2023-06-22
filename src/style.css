@@ -13,11 +13,11 @@
   --color-decoration: rgba(50, 50, 50, 0.5);
   --color-faded: rgb(150, 150, 150);
   --color-normal: rgb(50, 50, 50);
-  --color-link: rgb(45, 40, 70);
+  --color-link: rgb(37, 50, 126);
   --color-link-hover: rgb(20, 5, 100);
   --color-titles: rgb(5, 5, 5);
   --color-active: rgb(3, 3, 3);
-  --color-boundary-border: rgba(0, 0, 0, 0.03);
+  --color-boundary-border: rgba(0, 0, 0, 0.05);
   --color-boundary-border-hover: rgba(0, 0, 0, 0.04);
   --color-boundary-border-active: rgba(0, 0, 0, 0.07);
 }
