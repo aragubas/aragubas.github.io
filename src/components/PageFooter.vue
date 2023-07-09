@@ -41,11 +41,7 @@ import { ref } from "@vue/reactivity";
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-mastodon" />
-          <a href="https://pawb.fun/@aragubas" target="_blank">Mastodon (pawb.fun)</a>
-        </li>
-        <li>
-          <font-awesome-icon icon="fa-brands fa-mastodon" />
-          <a href="https://furry.engineer/@aragubas" target="_blank">Mastodon (furry.engineer)</a>
+          <a href="https://furry.engineer/@aragubas" target="_blank">Mastodon</a>
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-twitter" />
@@ -58,12 +54,13 @@ import { ref } from "@vue/reactivity";
         <li>
           <font-awesome-icon icon="fa-brands fa-tiktok" />
           <a href="https://www.tiktok.com/@aragubas" target="_blank">@aragubas</a>
-        </li>        
+        </li>
       </ul>
     </section>
 
     <section>
-      <p>Made with <a href="https://vuejs.org/" target="_blank">VueJS</a> using the <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> library!</p>
+      <p>Made with <a href="https://vuejs.org/" target="_blank">VueJS</a> using the <a href="https://fontawesome.com/"
+          target="_blank">Font Awesome</a> library!</p>
       <p>
         Source code available at <a href="https://github.com/aragubas/aragubas.github.io" target="_blank">Github</a>!
       </p>
