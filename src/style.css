@@ -24,22 +24,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --page-background: rgb(30, 40, 47);
-    --background-separation: rgb(50, 60, 67);
-    --background-control: rgb(70, 80, 87);
-    --background-control-hover: rgb(90, 100, 107);
-    --background-control-active: rgb(80, 90, 97);
+    --page-background: rgb(0, 17, 38);
+    --background-separation: rgb(0, 36, 81);
+    --background-control: rgb(14, 99, 156);
+    --background-control-hover: rgb(43, 118, 168);
+    --background-control-active: rgb(57, 127, 174);
 
-    --color-decoration: rgba(150, 150, 167, 0.75);
+    --color-decoration: rgba(150, 190, 247, 0.9);
     --color-faded: rgb(200, 200, 200);
     --color-normal: rgb(230, 230, 230);
-    --color-link: rgb(235, 235, 255);
-    --color-link-hover: rgb(200, 200, 255);
+    --color-link: rgb(118, 118, 201);
+    --color-link-hover: rgb(137, 137, 250);
     --color-titles: rgb(250, 250, 250);
     --color-active: rgb(255, 255, 255);
-    --color-boundary-border: rgba(255, 255, 255, 0.035);
-    --color-boundary-border-hover: rgba(255, 255, 255, 0.04);
-    --color-boundary-border-active: rgba(255, 255, 255, 0.07);
+    --color-boundary-border: rgba(200, 217, 238, 0.1);
+    --color-boundary-border-hover: rgba(255, 255, 255, 0.1);
+    --color-boundary-border-active: rgba(255, 255, 255, 0.15);
   }
 }
 

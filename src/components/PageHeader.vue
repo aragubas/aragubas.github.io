@@ -47,14 +47,16 @@ onUnmounted(() => {
   z-index: 1;
   position: sticky;
   top: 0;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0);
+  border-bottom: 1px solid transparent;
 }
 
 /* When shadow is visible */
 .wrapper.active {
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;  
+  border-bottom-color: var(--color-boundary-border);
   opacity: 0.99;
 }
 
