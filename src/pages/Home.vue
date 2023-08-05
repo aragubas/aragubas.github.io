@@ -26,6 +26,16 @@ import IntroCard from "../components/IntroCard.vue";
         </article>
 
         <article class="project-card">
+          <h4 class="title">
+            Oggly Rusty
+            <span class="language-label" language="rust">Rust</span>
+          </h4>
+          <p>CLI tool for playing audio files</p>
+          <p>You can also change the pitch and volume via command line arguments</p>
+          <a href="https://github.com/aragubas/oggly-rusty" target="_blank" class="button">Github</a>
+        </article>
+
+        <article class="project-card">
           <h4 class="title">Oggly <span class="language-label" language="c++">C++</span></h4>
           <p>CLI tool for playing .ogg files synchronously</p>
           <a href="https://github.com/aragubas/Oggly" target="_blank" class="button">Github</a>
@@ -190,19 +200,23 @@ import IntroCard from "../components/IntroCard.vue";
 }
 
 .language-label[language="c++"] {
-  background: rgb(30, 104, 160);
+  background: linear-gradient(0deg, rgb(10, 84, 164), rgb(30, 104, 160));
 }
 
 .language-label[language="c#"] {
-  background: rgb(122, 50, 151);
+  background: linear-gradient(0deg, rgb(102, 30, 131), rgb(122, 50, 151));
 }
 
 .language-label[language="ts"] {
-  background: rgb(0, 122, 204);
+  background: linear-gradient(0deg, rgb(0, 102, 184), rgb(0, 122, 204));
 }
 
 .language-label[language="css"] {
-  background: rgb(41, 101, 241);
+  background: linear-gradient(0deg, rgb(21, 81, 221), rgb(41, 101, 241));
+}
+
+.language-label[language="rust"] {
+  background: linear-gradient(0deg, rgb(204, 58, 0), rgb(244, 150, 0));
 }
 
 /* For mobile */
