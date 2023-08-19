@@ -9,6 +9,7 @@
   --background-control: rgb(230, 230, 230);
   --background-control-hover: rgb(225, 225, 225);
   --background-control-active: rgb(220, 220, 220);
+  --background-card: linear-gradient(162deg, rgb(245, 245, 245) 50%, rgb(242, 242, 242) 100%);
 
   --color-decoration: rgba(50, 50, 50, 0.5);
   --color-faded: rgb(150, 150, 150);
@@ -29,6 +30,7 @@
     --background-control: rgb(14, 99, 156);
     --background-control-hover: rgb(43, 118, 168);
     --background-control-active: rgb(57, 127, 174);
+    --background-card: linear-gradient(162deg, rgba(0, 36, 81, 1) 50%, rgb(0, 34, 75) 100%);
 
     --color-decoration: rgba(150, 190, 247, 0.9);
     --color-faded: rgb(200, 200, 200);

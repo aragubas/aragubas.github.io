@@ -2,15 +2,7 @@
 import { ref } from "@vue/reactivity";
 import TypewritterList from "./TypewritterList.vue";
 
-const wordlist: Array<string> = [
-  "Web Apps",
-  "Backends",
-  "Libraries",
-  "CLI Utilities",
-  "Games",
-  "Utility Scripts",
-  "Bwah",
-];
+const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah"];
 </script>
 
 <template>
@@ -34,7 +26,7 @@ const wordlist: Array<string> = [
   display: flex;
   gap: 0.5rem;
   padding: 1rem;
-  background: var(--background-separation);
+  background: var(--background-card);
   border-radius: 10px;
   border-width: 1px;
   border-style: inset;
