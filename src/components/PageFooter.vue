@@ -22,7 +22,7 @@ import { ref } from "@vue/reactivity";
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-discord" />
-          <a href="https://discord.com/users/678368118371778570" target="_blank">Discord</a>
+          <p>@aragubas</p>
         </li>
       </ul>
     </section>
@@ -59,14 +59,14 @@ import { ref } from "@vue/reactivity";
     </section>
 
     <section>
-      <p>Made with <a href="https://vuejs.org/" target="_blank">VueJS</a> using the <a href="https://fontawesome.com/"
-          target="_blank">Font Awesome</a> library!</p>
+      <p>
+        Made with <a href="https://vuejs.org/" target="_blank">VueJS</a> using the
+        <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> library!
+      </p>
       <p>
         Source code available at <a href="https://github.com/aragubas/aragubas.github.io" target="_blank">Github</a>!
       </p>
-      <p>
-        Bwah!
-      </p>
+      <p>Bwah!</p>
     </section>
 
     <q>The essential is invisible to the eye</q>
