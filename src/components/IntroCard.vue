@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref } from "@vue/reactivity";
 import TypewritterList from "./TypewritterList.vue";
 
 const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah"];
+const currentAge = 2023 - 2006;
 </script>
 
 <template>
@@ -11,12 +11,21 @@ const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools
       <img src="/aragubas.svg" alt="Aragubas Logo" />
     </div>
     <span class="decoration"></span>
-    <div class="intro-welcome clip-box">
-      <h1>Hello, I'm Aragubas</h1>
-      <div class="flex gap-small typewritter">
-        <p>I make</p>
-        <TypewritterList :word-list="wordlist" :delay="3500"></TypewritterList>
-      </div>
+    <div class="main-content clip-box">
+      <section>
+        <h1>Hello, I'm Aragubas</h1>
+        <p>My real name is Paulo Otávio de Lima</p>
+        <div class="flex gap-small typewritter">
+          <p>and I make</p>
+          <TypewritterList :word-list="wordlist" :delay="3500"></TypewritterList>
+        </div>
+      </section>
+      <section>
+        <h2>About Me</h2>
+        <p>I'm {{ currentAge }} years old, born in Brazil, Paraná</p>
+        <p>My Myers-Briggs Type is INFP-T</p>
+        <p>tech nerd</p>
+      </section>
     </div>
   </div>
 </template>
@@ -35,6 +44,12 @@ const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools
 
 .logo-box {
   display: flex;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 #wrapper img {
@@ -74,12 +89,25 @@ const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 440px) {
+  #wrapper {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
   #wrapper h1 {
     font-size: 1.6rem;
   }
+
+  #wrapper span.decoration {
+    height: 1px;
+    width: 100%;
+  }
+
   .logo-box {
-    width: 3rem;
+    height: 120px;
   }
 }
 
@@ -87,12 +115,25 @@ const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools
   #wrapper h1 {
     font-size: 1.2rem;
   }
-  .logo-box {
-    width: 2.2rem;
+
+  #wrapper h2 {
+    font-size: 1.15rem;
   }
 
   .typewritter {
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  #wrapper {
+    width: 500px;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .logo-box {
+    width: 125px;
   }
 }
 </style>
