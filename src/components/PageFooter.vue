@@ -45,15 +45,19 @@ import { ref } from "@vue/reactivity";
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-twitter" />
-          <a href="https://twitter.com/Aragubas_" target="_blank">@aragubas_</a>
+          <a href="https://twitter.com/Aragubas_" target="_blank">Twitter/X</a>
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-instagram" />
-          <a href="https://www.instagram.com/aragubas" target="_blank">@aragubas</a>
+          <a href="https://www.instagram.com/aragubas" target="_blank">Instagram</a>
         </li>
         <li>
           <font-awesome-icon icon="fa-brands fa-tiktok" />
-          <a href="https://www.tiktok.com/@aragubas" target="_blank">@aragubas</a>
+          <a href="https://www.tiktok.com/@aragubas" target="_blank">TikTok</a>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-solid fa-cloud" />
+          <a href="https://bsky.app/profile/aragubas.bsky.social" target="_blank">Bluesky</a>
         </li>
       </ul>
     </section>
