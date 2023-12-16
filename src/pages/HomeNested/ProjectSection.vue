@@ -12,6 +12,16 @@
     </article>
 
     <article class="project-card">
+      <h4 class="title">
+        mkOsSierraBreeze
+        <span class="language-label" language="c++">C++</span>
+      </h4>
+      <p>KDecorations2 macOS Sierra Theme for KDE Plasma</p>
+      <p>Based on <a href="https://github.com/kupiqu/SierraBreezeEnhanced">Sierra Breeze Enhanced</a></p>
+      <a href="https://github.com/aragubas/mkOsSierraBreeze" target="_blank" class="button">Github</a>
+    </article>
+    
+    <article class="project-card">
       <h4 class="title">Video Cruncher <span class="language-label" language="python">Python</span></h4>
       <p>Interactive CLI Tool for recursive video compression</p>
       <a href="https://github.com/aragubas/video-cruncher" target="_blank" class="button">Github</a>
