@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import TypewritterList from "./TypewritterList.vue";
 
-const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah"];
-const currentAge = 2023 - 2006;
+const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah", "UwU", "OwO"];
+const currentAge = 2024 - 2006;
 </script>
 
 <template>
@@ -14,17 +14,17 @@ const currentAge = 2023 - 2006;
     <div class="main-content clip-box">
       <section>
         <h1>Hello, I'm Aragubas</h1>
-        <p>My real name is Paulo Otávio de Lima</p>
+        <p>IRL name is Paulo Otávio de Lima</p>
         <div class="flex gap-small typewritter">
           <p>and I make</p>
-          <TypewritterList :word-list="wordlist" :delay="3500"></TypewritterList>
+          <TypewritterList :word-list="wordlist" :delay="3600"></TypewritterList>
         </div>
       </section>
       <section>
         <h2>About Me</h2>
         <p>I'm {{ currentAge }} years old, born in Brazil, Paraná</p>
-        <p>My Myers-Briggs Type is INFP-T</p>
-        <p>tech nerd</p>
+        <p>Personalizaly Index is INFP-T</p>
+        <p>tech nerd big nerd</p>
       </section>
     </div>
   </div>
