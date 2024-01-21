@@ -11,9 +11,9 @@ import ProjectSection from "./HomeNested/ProjectSection.vue";
       <header class="margin-medium">
         <h2>Projects</h2>
         <p>
-          I have a LOT of repositories on github. Most of them are WIP or just test. <br />So here are the ones that I'm
-          actually working on/finished. <br />
-          I also have a lot of repositories that are private so this is not all of my repos
+          I have a LOT of repos on github. Most of them are WIP or just test. <br />So here's the ones that I'm
+          actually working on/finished.<br />
+          I also have a lot of private repos so this is not all of my repos :3c
         </p>
       </header>
 
