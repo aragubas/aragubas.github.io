@@ -1,0 +1,55 @@
+@keyframes project-card-in {
+  from {
+    transform: translateY(-5%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.project-card {
+  animation: project-card-in 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--background-card);
+  padding: 1rem;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: inset;
+  border-color: var(--color-boundary-border);
+}
+
+.project-card i {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.project-card .title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1.5rem;
+  font-family: "Ubuntu";
+  font-weight: normal;
+}
+
+.project-card a.button {
+  align-self: flex-start;
+}
+
+/* For mobile */
+@media screen and (max-width: 640px) {
+  .project-card {
+    max-width: 90vw;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+
+  .project-card .title {
+    flex-direction: column;
+  }
+}

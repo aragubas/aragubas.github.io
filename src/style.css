@@ -2,6 +2,9 @@
 @import url("css/clip-box.css");
 @import url("css/css-reset.css");
 @import url("css/button.css");
+@import url("css/project-card.css");
+@import url("css/language-label.css");
+@import url("css/project-section.css");
 
 :root {
   --page-background: rgb(255, 255, 255);

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import IntroCard from "../components/IntroCard.vue";
 import ProjectSection from "./HomeNested/ProjectSection.vue";
+import CertificationsSection from "./HomeNested/CertificationsSection.vue";
 </script>
 
 <template>
@@ -11,13 +12,20 @@ import ProjectSection from "./HomeNested/ProjectSection.vue";
       <header class="margin-medium">
         <h2>Projects</h2>
         <p>
-          I have a LOT of repos on github. Most of them are WIP or just test. <br />So here's the ones that I'm
-          actually working on/finished.<br />
+          I have a LOT of repos on github. Most of them are WIP or just test. <br />So here's the ones that I'm actually
+          working on/finished.<br />
           I also have a lot of private repos so this is not all of my repos :3c
         </p>
       </header>
 
       <ProjectSection></ProjectSection>
+
+      <header class="margin-medium">
+        <h2>Certifications</h2>
+        <p>Online courses I completed :3c as simple as that</p>
+      </header>
+
+      <CertificationsSection></CertificationsSection>
     </section>
   </div>
 </template>
