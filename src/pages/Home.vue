@@ -22,7 +22,7 @@ import CertificationsSection from "./HomeNested/CertificationsSection.vue";
 
       <header class="margin-medium">
         <h2>Certifications</h2>
-        <p>Online courses I completed :3c as simple as that</p>
+        <p>Online courses I completed</p>
       </header>
 
       <CertificationsSection></CertificationsSection>
