@@ -20,6 +20,15 @@
       <a href="https://github.com/aragubas/LiVerseSharp" target="_blank" class="button">Github</a>
     </article>
 
+    <article class=project-card>
+      <h4 class="title">
+        Godot Package Manager
+        <span class="language-label" language="python">Python</span>
+      </h4>
+      <p>Package Management Solution for Godot written in Python</p>
+      <a href="https://github.com/aragubas/godotpackagemanager" target="_blank" class="button">Github</a>
+    </article>
+    
     <article class="project-card">
       <h4 class="title">
         Universal App Package
