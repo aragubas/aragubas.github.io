@@ -1,6 +1,4 @@
 # Aragubas Portfolio
-Feel free to use this as a base for your own personal portfolio or any kind of project!
+Feel free to use this as a base for your own personal portfolio or any kind of project! you can also use components/parts of this project as well, do whatever
 
-Github Pages build is in the docs folder
-
-Made with Typescript, Vue3 and Vue-Router x'3
+Made with Typescript, Vue3 and Vue-Router x3
