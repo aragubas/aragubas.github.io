@@ -1,37 +1,44 @@
 <script setup lang="ts">
 import TypewritterList from "./TypewritterList.vue";
 
-const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah", "UwU", "OwO"];
-const currentAge = 2024 - 2006;
+const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah", "owO"];
+  const currentAge = 2024 - 2006;
 </script>
 
 <template>
-  <div id="wrapper">
-    <div class="clip-box logo-box">
-      <img src="/aragubas.svg" alt="Aragubas Logo" />
-    </div>
-    <span class="decoration"></span>
-    <div class="main-content clip-box">
-      <section>
-        <h1>Hello, I'm Aragubas</h1>
-        <p>IRL name is Paulo Otávio de Lima</p>
-        <div class="flex gap-small typewritter">
-          <p>and I make</p>
-          <TypewritterList :word-list="wordlist" :delay="3600"></TypewritterList>
-        </div>
-      </section>
-      <section>
-        <h2>About Me</h2>
-        <p>I'm {{ currentAge }} years old, born in Brazil, Paraná</p>
-        <p>Personalizaly Index is INFP-T</p>
-        <p>tech nerd big nerd</p>
-      </section>
+  <div class="out-border">
+    <div class="content">
+      <div class="clip-box logo-box">
+        <img src="/aragubas.svg" alt="Aragubas Logo" />
+      </div>
+      <span class="decoration"></span>
+      <div class="main-content clip-box">
+        <section>
+          <h1>Hello, I'm Aragubas</h1>
+          <p>IRL name is Paulo Otávio de Lima</p>
+          <div class="flex gap-small typewritter">
+            <p>and I make</p>
+            <TypewritterList :word-list="wordlist" :delay="3600"></TypewritterList>
+          </div>
+        </section>
+        <section>
+          <h2>About Me</h2>
+          <p>I'm {{ currentAge }} years old, born in Brazil, Paraná</p>
+          <p>Personalizaly Index is INFP-T</p>
+          <p>tech nerd big nerd</p>
+        </section>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-#wrapper {
+.out-border {
+  border: 1px solid var(--color-out-border);
+  border-radius: 10px;
+}
+
+.content {
   display: flex;
   gap: 0.5rem;
   padding: 1rem;
@@ -52,15 +59,15 @@ const currentAge = 2024 - 2006;
   gap: 0.75rem;
 }
 
-#wrapper img {
+.content img {
   animation: logo-in 0.5s cubic-bezier(0, 0.5, 0.43, 1);
 }
 
-#wrapper h1 {
+.content h1 {
   font-size: 2rem;
 }
 
-#wrapper span.decoration {
+.content span.decoration {
   animation: decoration-in 0.35s linear;
   background: var(--color-decoration);
   width: 1px;
@@ -91,17 +98,17 @@ const currentAge = 2024 - 2006;
 
 /* Mobile */
 @media screen and (max-width: 440px) {
-  #wrapper {
+  .content {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
   }
 
-  #wrapper h1 {
+  .content h1 {
     font-size: 1.6rem;
   }
 
-  #wrapper span.decoration {
+  .content span.decoration {
     height: 1px;
     width: 100%;
   }
@@ -112,11 +119,11 @@ const currentAge = 2024 - 2006;
 }
 
 @media screen and (max-width: 350px) {
-  #wrapper h1 {
+  .content h1 {
     font-size: 1.2rem;
   }
 
-  #wrapper h2 {
+  .content h2 {
     font-size: 1.15rem;
   }
 
@@ -126,7 +133,7 @@ const currentAge = 2024 - 2006;
 }
 
 @media screen and (min-width: 580px) {
-  #wrapper {
+  .content {
     width: 500px;
     justify-content: center;
     gap: 2rem;

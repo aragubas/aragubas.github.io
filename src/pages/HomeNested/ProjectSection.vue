@@ -1,133 +1,163 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { TitleLink } from "../../models/TitleLink"
+import ProjectCard from "../../components/ProjectCard.vue";
+import { LanguageLabel, Project } from "../../models/Project";
+
+const projects = [
+  new Project("Portfolio", 
+  "The exact website you are in right now",
+  new Array<LanguageLabel> (
+    LanguageLabel.Typescript
+  ),
+   new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/aragubas.github.io")
+  )),
+
+  new Project("LiVerse", 
+  "Cross platform PNGTuber Avatar made with my own GUI Framework (AnaBan)", 
+  new Array<LanguageLabel>(
+    LanguageLabel.CSharp,
+    LanguageLabel.CPlusPlus,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/liverse")
+  )),
+
+  new Project("Godot Package Manager", 
+  "Cross platform PNGTuber Avatar made with my own GUI Framework (AnaBan)", 
+  new Array<LanguageLabel>(
+    LanguageLabel.CSharp,
+    LanguageLabel.CPlusPlus,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/liverse")
+  )),
+
+  new Project("Universal App Package", 
+  "Universal app packaging format for Linux and Windows. Coming Soon!", 
+  new Array<LanguageLabel>(
+    LanguageLabel.CSharp,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Coming Soon!", "https://example.com")
+  )),
+
+  new Project("Video Cruncher", 
+  "KDecorations2 macOS Sierra Theme for KDE Plasma!", 
+  new Array<LanguageLabel>(
+    LanguageLabel.Python,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/video-cruncher")
+  )),
+
+  new Project("mkOsSierraBreeze", 
+  "Interactive CLI Tool for recursive crunchy video compression", 
+  new Array<LanguageLabel>(
+    LanguageLabel.CPlusPlus,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/mkOsSierraBreeze")
+  )),
+
+  new Project("Oggly Rusty", 
+  "CLI tool for playing audio files synchronously", 
+  new Array<LanguageLabel>(
+    LanguageLabel.Rust,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/oggly-rusty")
+  )),
+
+  new Project("Oggly", 
+  "CLI tool for playing audio files synchronously", 
+  new Array<LanguageLabel>(
+    LanguageLabel.CPlusPlus,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/oggly")
+  )),
+
+  new Project("TaiyouConfig Compiler", 
+  "CLI tool for compiling tcfg files. Taiyou Config is a binary file format for storing data in namespace:name format",
+  new Array<LanguageLabel>(
+    LanguageLabel.CPlusPlus,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/taiyouconfig")
+  )),
+
+  new Project("GDIShot", 
+  "CLI tool for taking screenshots of the entire screen",
+  new Array<LanguageLabel>(
+    LanguageLabel.CPlusPlus,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/gdishot")
+  )),
+
+  new Project("ChargerPlugEvent", 
+  "Winform app for displaying a notification and plays a sound when plugging/unpligging laptop charger",
+  new Array<LanguageLabel>(
+    LanguageLabel.CSharp,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/chargerplugevent")
+  )),
+
+  new Project("TNotepad", 
+  "Text Editor with tabs made with WinForms and TaiyouUI Library",
+  new Array<LanguageLabel>(
+    LanguageLabel.CSharp,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/tnotepad")
+  )),
+
+  new Project("🗣", 
+  "Text Editor with tabs made with WinForms and TaiyouUI Library",
+  new Array<LanguageLabel>(
+    LanguageLabel.CSS,
+  ),
+  new Array<TitleLink>(
+    new TitleLink("Github", "https://github.com/aragubas/aiajsdkafoefpokwepfdoedpefw"),
+    new TitleLink("Website", "https://aragubas.github.io/aiajsdkafoefpokwepfdoedpefw/")
+  )),
+]
+
+</script>
 
 <template>
-  <section class="project-section">
-    <article class="project-card">
-      <h4 class="title">
-        Portfolio
-        <span class="language-label" language="ts">Typescript</span>
-      </h4>
-      <p>The exact website you are in right now!</p>
-      <a href="https://github.com/aragubas/aragubas.github.io" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">
-        LiVerse
-        <span class="language-label" language="c#">C#</span>
-      </h4>
-      <p>Cross-Platform Application build on my own GUI Framework for PNGTube Avatars</p>
-      <a href="https://github.com/aragubas/LiVerseSharp" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class=project-card>
-      <h4 class="title">
-        Godot Package Manager
-        <span class="language-label" language="python">Python</span>
-      </h4>
-      <p>Package Management Solution for Godot written in Python</p>
-      <a href="https://github.com/aragubas/godotpackagemanager" target="_blank" class="button">Github</a>
-    </article>
-    
-    <article class="project-card">
-      <h4 class="title">
-        Universal App Package
-        <span class="language-label" language="c#">C#</span>
-      </h4>
-      <p>Universal app packaging format for Windows and Linux. Coming Soon!</p>
-      <a href="https://example.com" target="_blank" class="button">Coming Soon</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">
-        mkOsSierraBreeze
-        <span class="language-label" language="c++">C++</span>
-      </h4>
-      <p>KDecorations2 macOS Sierra Theme for KDE Plasma</p>
-      <p>Based on <a href="https://github.com/kupiqu/SierraBreezeEnhanced">Sierra Breeze Enhanced</a></p>
-      <a href="https://github.com/aragubas/mkOsSierraBreeze" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">Video Cruncher <span class="language-label" language="python">Python</span></h4>
-      <p>Interactive CLI Tool for recursive video compression</p>
-      <a href="https://github.com/aragubas/video-cruncher" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">
-        Oggly Rusty
-        <span class="language-label" language="rust">Rust</span>
-      </h4>
-      <p>CLI tool for playing audio files</p>
-      <p>You can also change pitch and volume via command line arguments</p>
-      <a href="https://github.com/aragubas/oggly-rusty" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">Oggly <span class="language-label" language="c++">C++</span></h4>
-      <p>CLI tool for playing .ogg files synchronously</p>
-      <a href="https://github.com/aragubas/Oggly" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">
-        TaiyouConfig Compiler
-        <span class="language-label" language="c++">C++</span>
-      </h4>
-      <p>CLI tool for compiling tcfg files</p>
-      <p>TaiyouConfig is a custom file format for storing data in a namespace:name format.</p>
-      <a href="https://github.com/aragubas/TaiyouConfig" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">GDIShot <span class="language-label" language="c++">C++</span></h4>
-      <p><i>(Windows Only)</i> CLI tool for taking screenshots of the entire screen</p>
-      <a href="https://github.com/aragubas/GDIshot" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">
-        ChargerPlugEvent
-        <span class="language-label" language="c#">C#</span>
-      </h4>
-      <p><i>(Windows Only)</i> Displays a notification and plays a sound when plugging/unplugging laptop charger</p>
-      <a href="https://github.com/aragubas/ChargerPlugEvent" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">TNotepad <span class="language-label" language="c#">C#</span></h4>
-      <p><i>(Windows Only)</i> Basic text editor with tabs and ability to pin textfiles in homescreen</p>
-      <a href="https://github.com/aragubas/TNotepad" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">TaiyouClient <span class="language-label" language="c#">C#</span></h4>
-      <p><i>(WIP)</i> Desktop Client for Taiyou Messaging Platform (work in progress). Made with AvaloniaUI</p>
-      <a href="https://github.com/aragubas/TaiyouClient" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">
-        Taiyou (backend)
-        <span class="language-label" language="ts">Typescript</span>
-      </h4>
-      <p>
-        <i>(WIP)</i> Backend for Taiyou Messaging Platform (work in progress). Made with Prisma ORM, Express and
-        Socket.IO
-      </p>
-      <a href="https://github.com/aragubas/Taiyou" target="_blank" class="button">Github</a>
-    </article>
-
-    <article class="project-card">
-      <h4 class="title">🗣<span class="language-label" language="css">CSS</span></h4>
-      <p>aiajsdkafoefpokwepfdoedpefw</p>
-      <div class="flex gap-small-m">
-        <a href="https://github.com/aragubas/aiajsdkafoefpokwepfdoedpefw" target="_blank" class="button">Github</a>
-        <a href="https://aragubas.github.io/aiajsdkafoefpokwepfdoedpefw/" target="_blank" class="button">Website</a>
-      </div>
-    </article>
+  <section class="project-section">    
+    <ProjectCard v-for="project in projects" :project="project">
+    </ProjectCard>
   </section>
 </template>
 
-<style></style>
+<style>
+.project-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content;
+  gap: 1rem;
+  text-align: start;
+}
+
+/* For mobile */
+@media screen and (max-width: 640px) {
+  .project-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    box-sizing: border-box;
+    justify-items: stretch;
+    margin: 0 auto;
+  }
+}
+
+/* For big screens (tested on 1600x900) */
+@media screen and (min-width: 1280px) {
+  .project-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+</style>

@@ -2,9 +2,7 @@
 @import url("css/clip-box.css");
 @import url("css/css-reset.css");
 @import url("css/button.css");
-@import url("css/project-card.css");
 @import url("css/language-label.css");
-@import url("css/project-section.css");
 
 :root {
   --page-background: rgb(255, 255, 255);
@@ -21,9 +19,12 @@
   --color-link-hover: rgb(20, 5, 100);
   --color-titles: rgb(5, 5, 5);
   --color-active: rgb(3, 3, 3);
+  --color-out-border: rgba(3, 3, 3, 0.5);
   --color-boundary-border: rgba(0, 0, 0, 0.05);
   --color-boundary-border-hover: rgba(0, 0, 0, 0.04);
   --color-boundary-border-active: rgba(0, 0, 0, 0.07);
+
+  --border-radius-normal: 10px;
 }
 
 @media (prefers-color-scheme: dark) {

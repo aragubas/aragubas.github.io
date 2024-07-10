@@ -1,5 +1,5 @@
 .language-label {
-  display: block;
+  display: inline;
   font-size: 0.8rem;
   glyph-orientation-horizontal: 20deg;
   color: var(--color-faded);
