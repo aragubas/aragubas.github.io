@@ -53,9 +53,13 @@ import Section from "../components/Section.vue"
   }
 }
 
-/* For Mobile (Adjusts title size) */
-/* @media screen and (max-width: 340px) {
-} */
+/* For Mobile */
+@media screen and (max-width: 580px) {
+  .wrapper {
+    margin: 2rem 0.25rem;
+    margin-top: 1rem;
+  }
+}
 
 /* For big screens (tested on 1600x900) */
 @media screen and (min-width: 1280px) {

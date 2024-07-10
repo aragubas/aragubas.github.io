@@ -18,23 +18,36 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="wrapper" :class="{ active: headerShadow }">
-    <router-link to="/">
-      <div class="logo-box">
-        <img src="/aragubas.svg" id="header-logo" aria-labelledby="header-title" alt="Aragubas Logo" />
-        <p id="header-title">Aragubas</p>
+  <div class="border" :class="{ active: headerShadow }">
+    <div class="wrapper">
+      <router-link to="/">
+        <div class="logo-box">
+          <img src="/aragubas.svg" id="header-logo" aria-labelledby="header-title" alt="Aragubas Logo" />
+          <p id="header-title">Aragubas</p>
+        </div>
+      </router-link>
+  
+      <div class="header-buttons">
+        <router-link to="/support" class="button">Support</router-link>
       </div>
-    </router-link>
-
-    <div class="header-buttons">
-      <router-link to="/support" class="button">Support</router-link>
     </div>
   </div>
 </template>
 
 <style scoped>
+.border {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 1px solid var(--color-out-border);
+}
+
+.border.active {
+  border-radius: var(--border-radius-normal);
+}
+
 .wrapper {
-  transition: box-shadow 0.25s, border-radius 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: border-radius, border-bottom-color 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -42,22 +55,14 @@ onUnmounted(() => {
   align-items: center;
   background-color: var(--background-separation);
   height: 1.8rem;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0);
   border-bottom: 1px solid transparent;
 }
 
 /* When shadow is visible */
-.wrapper.active {
-  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+.border.active .wrapper {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;  
   border-bottom-color: var(--color-boundary-border);
-  opacity: 0.99;
 }
 
 .logo-box {
