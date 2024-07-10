@@ -35,7 +35,7 @@ const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools
 <style scoped>
 .out-border {
   border: 1px solid var(--color-out-border);
-  border-radius: 10px;
+  border-radius: var(--border-radius-normal);
 }
 
 .content {
@@ -43,7 +43,7 @@ const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools
   gap: 0.5rem;
   padding: 1rem;
   background: var(--background-card);
-  border-radius: 10px;
+  border-radius: var(--border-radius-normal);
   border-width: 1px;
   border-style: inset;
   border-color: var(--color-boundary-border);
