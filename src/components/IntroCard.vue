@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import TypewritterList from "./TypewritterList.vue";
 
-const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah", "owO"];
+const wordlist: Array<string> = ["Web Services", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah", "owO"];
   const currentAge = 2024 - 2006;
 </script>
 
@@ -71,7 +71,6 @@ const wordlist: Array<string> = ["Web Apps", "Backends", "Libraries", "CLI Tools
   animation: decoration-in 0.35s linear;
   background: var(--color-decoration);
   width: 1px;
-  border-radius: 2px;
   height: inherit;
   opacity: 0.25;
 }
