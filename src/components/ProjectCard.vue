@@ -56,7 +56,7 @@ function languageName(key: LanguageLabel) {
   gap: 0.5rem;
   background: var(--background-card);
   padding: 1rem;
-  border-radius: 6px;
+  border-radius: var(--border-radius-normal);
   border-width: 1px;
   border-style: inset;
   border-color: var(--color-boundary-border);
