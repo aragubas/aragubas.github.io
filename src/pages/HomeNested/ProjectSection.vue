@@ -43,7 +43,7 @@ const projects = [
   )),
 
   new Project("Video Cruncher", 
-  "KDecorations2 macOS Sierra Theme for KDE Plasma!", 
+  "Interactive CLI Tool for recursive crunchy video compression", 
   new Array<LanguageLabel>(
     LanguageLabel.Python,
   ),
@@ -52,7 +52,7 @@ const projects = [
   )),
 
   new Project("mkOsSierraBreeze", 
-  "Interactive CLI Tool for recursive crunchy video compression", 
+  "KDecorations2 macOS Sierra Theme for KDE Plasma!", 
   new Array<LanguageLabel>(
     LanguageLabel.CPlusPlus,
   ),
@@ -115,7 +115,7 @@ const projects = [
   )),
 
   new Project("🗣", 
-  "Text Editor with tabs made with WinForms and TaiyouUI Library",
+  "aiajsdkafoefpokwepfdoedpefw",
   new Array<LanguageLabel>(
     LanguageLabel.CSS,
   ),
