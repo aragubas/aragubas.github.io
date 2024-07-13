@@ -60,8 +60,8 @@ onUnmounted(() => {
 
 /* When shadow is visible */
 .border.active .wrapper {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;  
+  border-bottom-left-radius: var(--border-radius-normal);
+  border-bottom-right-radius: var(--border-radius-normal);  
   border-bottom-color: var(--color-boundary-border);
 }
 
