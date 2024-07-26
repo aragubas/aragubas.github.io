@@ -47,7 +47,7 @@ onMounted(() => {
   setTimeout(() => {
     generateRandomCombination();
 
-    randomEmojisIntervalID = setInterval(() => generateRandomCombination, interval);
+    randomEmojisIntervalID = setInterval(() => generateRandomCombination(), interval);
   }, initialInterval);
 });
 
@@ -57,7 +57,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="wrapper">
+  <main>
     <div class="title-box clip-box">
       <h1>404 Not found</h1>
       <p>
@@ -77,7 +77,7 @@ onUnmounted(() => {
         <router-link to="/" class="button">Home</router-link>
       </li>
     </ul>
-  </div>
+  </main>
 </template>
 
 <style scoped>
@@ -92,7 +92,7 @@ onUnmounted(() => {
   }
 }
 
-.wrapper {
+main {
   animation: in-animation 0.5 ease;
   display: flex;
   flex-direction: column;
@@ -114,7 +114,7 @@ onUnmounted(() => {
   font-size: var(--font-size-content-as-text);
 }
 
-.wrapper h1 {
+main h1 {
   font-family: "Inter";
   font-weight: lighter;
   font-size: var(--font-size-content-as-text-title);
@@ -122,7 +122,7 @@ onUnmounted(() => {
 }
 
 @media screen and (max-width: 640px) {
-  .wrapper h1 {
+  main h1 {
     font-size: 2.7rem;
   }
 
