@@ -107,7 +107,7 @@ q {
 }
 
 section .title {
-  font-size: 1.3rem;
+  font-size: var(--font-size-primary-title-subcontent);
   padding: 0.2rem 0rem;
   font-family: "Ubuntu";
 }
