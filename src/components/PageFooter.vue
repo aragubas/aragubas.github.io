@@ -4,11 +4,10 @@ import { ref } from "@vue/reactivity";
 
 <template>
   <div class="border">
-
     <footer id="wrapper">
       <section id="contact-links">
         <h4 class="title">Contact me</h4>
-  
+
         <ul class="flex gap-small-m link-list">
           <li>
             <font-awesome-icon icon="fa-solid fa-inbox" />
@@ -28,10 +27,10 @@ import { ref } from "@vue/reactivity";
           </li>
         </ul>
       </section>
-  
+
       <section id="social-links">
         <h4 class="title">Social</h4>
-  
+
         <ul class="flex gap-small-m link-list">
           <li>
             <font-awesome-icon icon="fa-brands fa-youtube" />
@@ -63,7 +62,7 @@ import { ref } from "@vue/reactivity";
           </li>
         </ul>
       </section>
-  
+
       <section>
         <p>
           Made with <a href="https://vuejs.org/" target="_blank">VueJS</a> using the
@@ -74,7 +73,7 @@ import { ref } from "@vue/reactivity";
         </p>
         <p>Bwah!</p>
       </section>
-  
+
       <q>The essential is invisible to the eye</q>
     </footer>
   </div>

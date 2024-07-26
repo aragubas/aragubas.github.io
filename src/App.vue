@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import PageHeader from './components/PageHeader.vue';
-import PageFooter from './components/PageFooter.vue';
+import PageHeader from "./components/PageHeader.vue";
+import PageFooter from "./components/PageFooter.vue";
 </script>
 
 <template>
@@ -9,6 +9,4 @@ import PageFooter from './components/PageFooter.vue';
   <PageFooter></PageFooter>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

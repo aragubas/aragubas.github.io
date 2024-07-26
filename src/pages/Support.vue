@@ -8,9 +8,7 @@
       </div>
       <p>
         I accept donations internationally through
-        <a href="https://www.buymeacoffee.com/aragubas" target="_black"
-          >Buy me a coffee</a
-        >
+        <a href="https://www.buymeacoffee.com/aragubas" target="_black">Buy me a coffee</a>
       </p>
       <p>and also Crypto:</p>
 
@@ -32,15 +30,9 @@
       </ul>
 
       <br />
-      <p>
-        If you live in Brazil you can also send me a pix by scanning the image
-        below
-      </p>
+      <p>If you live in Brazil you can also send me a pix by scanning the image below</p>
 
-      <img
-        src="/pix_donation.png"
-        alt="Chave pix de Paulo Otávio de Lima (eu, aragubas)"
-      />
+      <img src="/pix_donation.png" alt="Chave pix de Paulo Otávio de Lima (eu, aragubas)" />
     </section>
   </div>
 </template>

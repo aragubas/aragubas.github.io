@@ -2,7 +2,7 @@
 import TypewritterList from "./TypewritterList.vue";
 
 const wordlist: Array<string> = ["Web Services", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah", "owO"];
-  const currentAge = 2024 - 2006;
+const currentAge = 2024 - 2006;
 </script>
 
 <template>

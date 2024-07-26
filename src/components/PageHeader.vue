@@ -26,7 +26,7 @@ onUnmounted(() => {
           <p id="header-title">Aragubas</p>
         </div>
       </router-link>
-  
+
       <div class="header-buttons">
         <router-link to="/support" class="button">Support</router-link>
       </div>
@@ -61,7 +61,7 @@ onUnmounted(() => {
 /* When shadow is visible */
 .border.active .wrapper {
   border-bottom-left-radius: var(--border-radius-normal);
-  border-bottom-right-radius: var(--border-radius-normal);  
+  border-bottom-right-radius: var(--border-radius-normal);
   border-bottom-color: var(--color-boundary-border);
 }
 
