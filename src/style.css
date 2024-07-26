@@ -25,6 +25,12 @@
   --color-boundary-border-active: rgba(0, 0, 0, 0.07);
 
   --border-radius-normal: 10px;
+
+  --font-size-content-as-text-title: 3rem;
+  --font-size-content-as-text: 8rem;
+  --font-size-primary-title: 2rem;
+  --font-size-primary-title-subcontent: 1.35rem;
+  --font-size-content: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +60,7 @@ body {
   background: var(--page-background);
   color: var(--color-normal);
   font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: var(--font-size-content);
   margin: 0;
 }
 
