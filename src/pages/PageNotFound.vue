@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, onUnmounted, Ref, ref } from "vue";
 import { randomRange } from "../utils";
 
 class helpfulCharCombination {
@@ -31,13 +31,28 @@ const emojisList = [
   new helpfulCharCombination("🤨", "🤨"),
 ];
 
-let currentCombination = ref(emojisList[Math.floor(randomRange(0, length))]);
+let currentCombination: Ref<helpfulCharCombination | undefined> = ref(undefined);
+let randomEmojisIntervalID = 0;
+const initialInterval = 15000; // 15.000 or 15 seconds
+const interval = 60000; // 60.000 or 1 minute
+
+function generateRandomCombination() {
+  currentCombination.value = emojisList[Math.floor(randomRange(0, emojisList.length))];
+}
 
 onMounted(() => {
+  // generateRandomCombination();
+
   // Change emoji every minute
-  setInterval(() => {
-    currentCombination.value = emojisList[Math.floor(randomRange(0, emojisList.length))];
-  }, 60000);
+  setTimeout(() => {
+    generateRandomCombination();
+
+    randomEmojisIntervalID = setInterval(() => generateRandomCombination, interval);
+  }, initialInterval);
+});
+
+onUnmounted(() => {
+  clearInterval(randomEmojisIntervalID);
 });
 </script>
 
@@ -45,11 +60,16 @@ onMounted(() => {
   <div class="wrapper">
     <div class="title-box clip-box">
       <h1>404 Not found</h1>
-      <p>Could not find page at the requested URL. Here's helpful {{ currentCombination.description }}</p>
+      <p>
+        Could not find page at the requested URL.
+        {{ !currentCombination ? "" : `Here is helpful ${currentCombination.description}` }}
+      </p>
     </div>
 
     <div class="pizza-emoji clip-box">
-      <p class="pizza-emoji">{{ currentCombination.content }}</p>
+      <p class="pizza-emoji">
+        {{ !currentCombination ? "❓" : currentCombination.content }}
+      </p>
     </div>
 
     <ul class="clip-box">
