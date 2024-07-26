@@ -15,9 +15,9 @@ const currentAge = 2024 - 2006;
       <div class="main-content clip-box">
         <section>
           <h1>Hello, I'm Aragubas</h1>
-          <p>IRL name is Paulo Otávio de Lima</p>
+          <p>My name is Paulo Otávio de Lima</p>
           <div class="flex gap-small typewritter">
-            <p>and I make</p>
+            <p>I make</p>
             <TypewriterList :word-list="wordlist" :delay="3600"></TypewriterList>
           </div>
         </section>
@@ -35,6 +35,10 @@ const currentAge = 2024 - 2006;
 .out-border {
   border: 1px solid var(--color-out-border);
   border-radius: var(--border-radius-normal);
+}
+
+.logo-box > img {
+  width: 100%;
 }
 
 .content {
@@ -134,7 +138,7 @@ const currentAge = 2024 - 2006;
   .content {
     width: 500px;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .logo-box {
