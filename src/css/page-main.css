@@ -4,7 +4,14 @@ main {
   align-items: center;
   margin: var(--margin-global-page-side-borders);
   margin-top: var(--margin-global-page-top-borders);
-  gap: 1rem;
+  gap: 1.25rem;
+}
+
+main header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 /* For mobile */
