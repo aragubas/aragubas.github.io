@@ -3,6 +3,7 @@
 @import url("css/css-reset.css");
 @import url("css/button.css");
 @import url("css/language-label.css");
+@import url("css/table.css");
 @import url("css/page-main.css");
 @import url("css/responsive.css");
 
@@ -38,6 +39,7 @@
 
   /* Border Radius */
   --border-radius-normal: 10px;
+  --border-radius-small: calc(var(--border-radius-normal) / 2);
 
   /* Margins */
   --margin-global-page-side-borders: 3rem;
@@ -73,11 +75,6 @@ body {
   font-family: "Inter", Helvetica, Arial, sans-serif;
   font-size: var(--font-size-content);
   margin: 0;
-}
-
-/* Fixed images being too big */
-img {
-  max-width: 100%;
 }
 
 h1,

@@ -1,0 +1,31 @@
+table {
+  border: 1px solid var(--color-faded);
+  border-radius: var(--border-radius-small);
+  padding: 0px 0.25rem;
+}
+
+/* Color every row's left border (except the first one) */
+table td:not(:first-child) {
+  border-left: 1px solid var(--color-faded);
+}
+
+/* Color every header's left border (except the first one) */
+table th:not(:first-child) {
+  border-left: 1px solid var(--color-faded);
+}
+
+/* Color header's bottom border */
+table th {
+  border-bottom: 1px solid var(--color-faded);
+}
+
+/* Color every row's bottom border */
+table td {
+  border-bottom: 1px solid var(--color-faded);
+  padding: 0px 0.2rem;
+}
+
+/* Remove border from the last row */
+table tr:last-child td {
+  border-bottom: none;
+}
