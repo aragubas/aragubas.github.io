@@ -66,14 +66,17 @@ function languageName(key: LanguageLabel) {
 
 .project-card header {
   display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   gap: 0.25rem;
   font-family: "Ubuntu";
   font-weight: normal;
 }
 
+/* Title text */
 .project-card header h1 {
-  font-size: 1.5rem;
+  font-size: var(--font-size-primary-title-subcontent);
 }
 
 .project-card header .languages {
@@ -93,19 +96,5 @@ function languageName(key: LanguageLabel) {
 
 .project-card a.button {
   align-self: flex-start;
-}
-
-/* For mobile */
-@media screen and (max-width: 640px) {
-  .project-card {
-    max-width: 90vw;
-    box-sizing: border-box;
-    padding: 0.5rem;
-    border-radius: 8px;
-  }
-
-  .project-card header {
-    flex-direction: column;
-  }
 }
 </style>
