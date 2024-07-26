@@ -6,21 +6,21 @@ import Section from "../components/Section.vue";
 </script>
 
 <template>
-  <div class="wrapper">
+  <main>
     <IntroCard></IntroCard>
 
-    <Section :title="'Certification'" :description="'My Certifications, mostly online courses I completed'">
+    <Section :title="'Certifications'">
       <CertificationsSection />
     </Section>
 
     <Section :title="'Projects'" :description="'My public open source projects!'">
       <ProjectSection />
     </Section>
-  </div>
+  </main>
 </template>
 
 <style scoped>
-.wrapper {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +31,7 @@ import Section from "../components/Section.vue";
 
 /* For mobile */
 @media screen and (max-width: 640px) {
-  .wrapper {
+  main {
     align-items: center;
     padding: 1rem 0.5rem;
   }
@@ -43,7 +43,7 @@ import Section from "../components/Section.vue";
 
 /* For Mobile */
 @media screen and (max-width: 580px) {
-  .wrapper {
+  main {
     margin: 2rem 0.25rem;
     margin-top: 1rem;
   }
@@ -51,7 +51,7 @@ import Section from "../components/Section.vue";
 
 /* For big screens (tested on 1600x900) */
 @media screen and (min-width: 1280px) {
-  .wrapper {
+  main {
     margin: 2rem 5rem;
     margin-top: 1rem;
   }
