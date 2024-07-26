@@ -6,7 +6,7 @@ const props = defineProps({ items: Array<Project> });
 </script>
 
 <template>
-  <section>
+  <section :class="items?.length == 1 ? 'single-item' : ''">
     <ProjectCard v-for="project in items" :project="project"> </ProjectCard>
   </section>
 </template>
@@ -18,6 +18,10 @@ section {
   grid-template-rows: min-content;
   gap: 1rem;
   text-align: start;
+}
+
+section.single-item {
+  display: flex;
 }
 
 /* For mobile */
