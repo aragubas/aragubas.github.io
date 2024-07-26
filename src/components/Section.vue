@@ -9,7 +9,7 @@ const props = defineProps({
   <article class="section">
     <header>
       <h1>{{ title }}</h1>
-      <p>{{ description }}</p>
+      <p v-if="description != null">{{ description }}</p>
     </header>
 
     <div class="items">
@@ -31,10 +31,9 @@ const props = defineProps({
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding-bottom: 0.75rem;
 }
 
 .section header h1 {
-  font-size: 2rem;
+  font-size: var(--font-size-primary-title);
 }
 </style>
