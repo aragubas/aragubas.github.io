@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TypewritterList from "./TypewritterList.vue";
+import TypewriterList from "./TypewriterList.vue";
 
 const wordlist: Array<string> = ["Web Services", "Libraries", "CLI Tools", "Games", "Utility Scripts", "Bwah", "owO"];
 const currentAge = 2024 - 2006;
@@ -18,14 +18,13 @@ const currentAge = 2024 - 2006;
           <p>IRL name is Paulo Otávio de Lima</p>
           <div class="flex gap-small typewritter">
             <p>and I make</p>
-            <TypewritterList :word-list="wordlist" :delay="3600"></TypewritterList>
+            <TypewriterList :word-list="wordlist" :delay="3600"></TypewriterList>
           </div>
         </section>
         <section>
           <h2>About Me</h2>
           <p>I'm {{ currentAge }} years old, born in Brazil, Paraná</p>
-          <p>Personalizaly Index is INFP-T</p>
-          <p>tech nerd big nerd</p>
+          <p>INFP-T Software Dev with focus on Web, <br />Desktop apps and Operating Systems</p>
         </section>
       </div>
     </div>
@@ -64,7 +63,7 @@ const currentAge = 2024 - 2006;
 }
 
 .content h1 {
-  font-size: 2rem;
+  font-size: var(--font-size-primary-title);
 }
 
 .content span.decoration {
@@ -126,7 +125,7 @@ const currentAge = 2024 - 2006;
     font-size: 1.15rem;
   }
 
-  .typewritter {
+  .typewriter {
     font-size: 0.8rem;
   }
 }
