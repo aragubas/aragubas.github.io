@@ -1,48 +1,70 @@
 <script setup lang="ts">
-import { onMounted, ref, defineProps } from "@vue/runtime-dom";
+import { onMounted, ref, defineProps, onUnmounted } from "vue";
 
 const props = defineProps<{ wordList: Array<string>; delay: number }>();
 
 const text = ref("Wait for it...");
-let typewriterText = "";
-let typewriterCharacter = 0;
-let typewriterActive = false;
+let updateLoopInterval = 0;
+let nextWordTimeout = 0;
+let wordIndex = 1;
+let fullText = "";
+let currentCharacterIndex = 0;
+let active = false;
+let waitingForNextWord = false;
 
-function typeSetUp(newText: string) {
+// Set-up state with new text
+function setUpText(newText: string) {
   if (newText == text.value) {
     return;
   }
-  typewriterText = newText;
-  typewriterActive = true;
-  typewriterCharacter = 0;
+  fullText = newText;
+  active = true;
+  currentCharacterIndex = 0;
   text.value = "";
 }
 
+// Called every update frame
+function updateLoop() {
+  if (active) {
+    // If reached the end of the word
+    if (currentCharacterIndex > fullText.length - 1) {
+      active = false;
+      currentCharacterIndex = 0;
+    } else {
+      // Otherwise, increase character index and add next character
+      text.value += fullText[currentCharacterIndex];
+
+      currentCharacterIndex++;
+    }
+  } else {
+    // If not active, choose next word to appear after a delay
+    if (waitingForNextWord) return;
+    nextWordTimeout = setTimeout(chooseNextWord, props.delay);
+    waitingForNextWord = true;
+  }
+}
+
+// Chooses next word and sets waitingForNextWord to false
+function chooseNextWord() {
+  waitingForNextWord = false;
+  setUpText(props.wordList[wordIndex]);
+
+  wordIndex++;
+  if (wordIndex > props.wordList.length - 1) {
+    wordIndex = 0;
+  }
+}
+
 onMounted(() => {
-  let wordIndex = 1;
-  typeSetUp(props.wordList[0]);
+  // Display first word
+  setUpText(props.wordList[0]);
 
-  setInterval(() => {
-    if (typewriterActive) {
-      if (typewriterCharacter > typewriterText.length - 1) {
-        typewriterActive = false;
-        typewriterCharacter = 0;
-      } else {
-        text.value += typewriterText[typewriterCharacter];
+  // Update loop
+  updateLoopInterval = setInterval(() => updateLoop(), 50);
+});
 
-        typewriterCharacter++;
-      }
-    }
-  }, 50);
-
-  setInterval(() => {
-    typeSetUp(props.wordList[wordIndex]);
-
-    wordIndex++;
-    if (wordIndex > props.wordList.length - 1) {
-      wordIndex = 0;
-    }
-  }, props.delay);
+onUnmounted(() => {
+  clearInterval(updateLoopInterval);
 });
 </script>
 
