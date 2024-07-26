@@ -13,31 +13,3 @@ main header {
   gap: 0.5rem;
   align-items: center;
 }
-
-/* For mobile */
-@media screen and (max-width: 640px) {
-  main {
-    align-items: center;
-    padding: 1rem 0.5rem;
-  }
-
-  .main-section {
-    margin: 0;
-  }
-}
-
-/* For Mobile */
-@media screen and (max-width: 580px) {
-  main {
-    margin: 2rem 0.25rem;
-    margin-top: 1rem;
-  }
-}
-
-/* For big screens (tested on 1600x900) */
-@media screen and (min-width: 1280px) {
-  main {
-    margin: 2rem 5rem;
-    margin-top: 1rem;
-  }
-}

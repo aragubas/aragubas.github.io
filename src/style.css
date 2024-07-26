@@ -5,7 +5,6 @@
 @import url("css/language-label.css");
 @import url("css/table.css");
 @import url("css/page-main.css");
-@import url("css/responsive.css");
 
 :root {
   /* Font Sizes */
@@ -77,13 +76,9 @@ body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-  font-family: "Ubuntu";
-  color: var(--color-titles);
+@media screen and (max-width: 600px) {
+  :root {
+    /* Margins */
+    --margin-global-page-side-borders: 1.5rem;
+  }
 }

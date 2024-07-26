@@ -15,6 +15,8 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  font-family: "Ubuntu";
+  color: var(--color-titles);
 }
 
 ol,
@@ -31,5 +33,5 @@ li {
 
 /* Fixed images being too big */
 img {
-  max-width: min-content;
+  max-width: 100%;
 }
