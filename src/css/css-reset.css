@@ -28,3 +28,8 @@ li {
   margin: 0;
   padding: 0;
 }
+
+/* Fixed images being too big */
+img {
+  max-width: min-content;
+}
