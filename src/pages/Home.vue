@@ -2,7 +2,7 @@
 import IntroCard from "../components/IntroCard.vue";
 import ProjectSection from "./HomeNested/ProjectSection.vue";
 import CertificationsSection from "./HomeNested/CertificationsSection.vue";
-import Section from "../components/Section.vue"
+import Section from "../components/Section.vue";
 </script>
 
 <template>
@@ -16,18 +16,6 @@ import Section from "../components/Section.vue"
     <Section :title="'Projects'" :description="'My public open source projects!'">
       <ProjectSection />
     </Section>
-
-    <!-- <section class="main-section">
-      <header class="margin-medium section-headers">
-        <h2>Projects</h2>
-        <p>
-          I have a LOT of repos on github. Most of them are WIP or just test. <br />So here's the ones that I'm actually
-          working on/finished.<br />
-          I also have a lot of private repos so this is not all of my repos :3c
-        </p>
-      </header>
-
-    </section> -->
   </div>
 </template>
 
