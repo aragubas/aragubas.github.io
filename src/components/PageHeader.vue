@@ -22,7 +22,13 @@ onUnmounted(() => {
     <div class="wrapper">
       <router-link to="/">
         <div class="logo-box">
-          <img src="/aragubas.svg" id="header-logo" aria-labelledby="header-title" alt="Aragubas Logo" />
+          <img
+            src="/aragubas.svg"
+            id="header-logo"
+            aria-labelledby="header-title"
+            alt="Aragubas Logo"
+            aria-describedby="description"
+          />
           <p id="header-title">Aragubas</p>
         </div>
       </router-link>
@@ -47,22 +53,20 @@ onUnmounted(() => {
 }
 
 .wrapper {
-  transition: border-radius, border-bottom-color 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-  padding: 0.5rem 1rem;
+  transition: border-radius 1s cubic-bezier(0.23, 1, 0.32, 1);
+  padding: 0.35rem var(--margin-global-page-side-borders);
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
   align-items: center;
   background-color: var(--background-separation);
-  height: 1.8rem;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--color-boundary-border);
 }
 
 /* When shadow is visible */
 .border.active .wrapper {
   border-bottom-left-radius: var(--border-radius-normal);
   border-bottom-right-radius: var(--border-radius-normal);
-  border-bottom-color: var(--color-boundary-border);
 }
 
 .logo-box {
@@ -74,12 +78,13 @@ onUnmounted(() => {
 a {
   text-decoration: none;
 }
+
 a:visited {
   color: inherit;
 }
 
 #header-logo {
-  width: 2.3rem;
+  width: 1.8rem;
 }
 
 #header-title {
