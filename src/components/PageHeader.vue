@@ -19,7 +19,7 @@ onUnmounted(() => {
 
 <template>
   <div class="border" :class="{ active: headerShadow }">
-    <div class="wrapper">
+    <header class="wrapper">
       <router-link to="/">
         <div class="logo-box">
           <img
@@ -36,7 +36,7 @@ onUnmounted(() => {
       <div class="header-buttons">
         <router-link to="/support" class="button">Support</router-link>
       </div>
-    </div>
+    </header>
   </div>
 </template>
 
