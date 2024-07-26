@@ -34,6 +34,7 @@ const emojisList = [
 let currentCombination = ref(emojisList[Math.floor(randomRange(0, length))]);
 
 onMounted(() => {
+  // Change emoji every minute
   setInterval(() => {
     currentCombination.value = emojisList[Math.floor(randomRange(0, emojisList.length))];
   }, 60000);
