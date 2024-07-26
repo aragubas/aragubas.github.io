@@ -86,7 +86,7 @@ import { ref } from "@vue/reactivity";
 }
 
 #wrapper {
-  padding: 1.2rem;
+  padding: 0.8rem var(--margin-global-page-side-borders);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
