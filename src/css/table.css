@@ -2,6 +2,8 @@ table {
   border: 1px solid var(--color-faded);
   border-radius: var(--border-radius-small);
   padding: 0px 0.25rem;
+  table-layout: fixed;
+  width: 100%;
 }
 
 /* Color every row's left border (except the first one) */
@@ -23,6 +25,7 @@ table th {
 table td {
   border-bottom: 1px solid var(--color-faded);
   padding: 0px 0.2rem;
+  word-wrap: break-word;
 }
 
 /* Remove border from the last row */
