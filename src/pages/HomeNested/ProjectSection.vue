@@ -20,8 +20,8 @@ const projects = [
 
   new Project(
     "Godot Package Manager",
-    "Cross platform PNGTuber Avatar made with my own GUI Framework (AnaBan)",
-    new Array<LanguageLabel>(LanguageLabel.CSharp, LanguageLabel.CPlusPlus),
+    "Package Manager inspired in NPM for Godot projects",
+    new Array<LanguageLabel>(LanguageLabel.Python),
     new Array<TitleLink>(new TitleLink("Github", "https://github.com/aragubas/liverse"))
   ),
 
