@@ -22,7 +22,7 @@ const projects = [
     "Godot Package Manager",
     "Package Manager inspired in NPM for Godot projects",
     new Array<LanguageLabel>(LanguageLabel.Python),
-    new Array<TitleLink>(new TitleLink("Github", "https://github.com/aragubas/liverse"))
+    new Array<TitleLink>(new TitleLink("Github", "https://github.com/aragubas/godotpackagemanager"))
   ),
 
   new Project(
