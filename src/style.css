@@ -17,12 +17,34 @@
 
     --control-border-radius: 12px;
     --control-outer-border: rgba(0, 0, 0, 25%);
+    
+    /* Font Sizes */
+    --brand-text-0: 64px;
+    --brand-text-1: 34px;
+    --brand-text-2: 24px;
+    --brand-text-3: 20px;
+    --brand-text-4: 16px;
+    
+    --paragraph-text-0: 24px;
+    --paragraph-text-1: 20px;
+    --paragraph-text-2: 16px;
 
-    --text-size-header: 64px;
-    --text-size-header-sub: 24px;
-    --text-size-paragraph-focus: 20px;
+    /* Spaces */
+    --space-0: 64px;
+    --space-1: 34px;
+    --space-2: 24px;
+    --space-3: 12px;
+    --space-4: 6px;
+    --space-column: var(--space-0);
 
-    --space-main-box: 64px;
+    --text-interactive-size: bold var(--paragraph-text-2)px, 'Ubuntu';
+    --text-regular-paragraph: normal var(--paragraph-text-2)px, 'Roboto Condensed';
+    --text-subtitle: bold var(--paragraph-text-0)px, 'Ubuntu';
+    --text-header-sub: bold var(--paragraph-text-0)px, 'Roboto Condensed';
+    --text-section-header: bold var(--brand-text-1)px, 'Ubuntu';
+    --text-header: bold var(--brand-text-0)px, 'Ubuntu';
+    --text-paragraph-focus: normal var(--paragraph-text-1)px, 'Roboto Condensed';
+    --text-regular-paragraph-italic: italic var(--paragraph-text-2)px, 'Roboto Condensed';
 }
 
 body {
@@ -30,9 +52,8 @@ body {
     flex-direction: column;
     background-color: var(--background-darkest);
     color: var(--text-normal);
-    font-family: 'Roboto Condensed', 'sans-serif';
-    font-size: 16px;
     margin: 0px;
+    font: var(--text-regular-paragraph);
 }
 
 /* Style all links */
@@ -48,7 +69,7 @@ span.text-highlight {
     display: flex;
     justify-content: space-between;
     flex: 1;
-    padding: 12px var(--space-main-box);
+    padding: var(--space-3) var(--space-column);
     background-color: var(--background-2);
     border-bottom: 1px solid var(--background-2-saturated);
     margin-bottom: 1px;
@@ -63,8 +84,8 @@ span.text-highlight {
 
 .hero-section {
     display: flex;
-    padding: 0px var(--space-main-box);
-    gap: 64px;
+    padding: 0px var(--space-column);
+    gap: var(--space-0);
     
 }
 
@@ -73,7 +94,7 @@ span.text-highlight {
     align-items: center;
     flex-direction: column;
     gap: 12px;
-    padding: 64px 0px;
+    padding: var(--space-0) 0px;
 }
 
 .hero-section .hero-image {
@@ -92,32 +113,31 @@ span.text-highlight {
     background-color: var(--background-2);
     border: 1px solid var(--background-2-saturated);
     border-top-width: 0px;
-    padding: 64px 64px;
-    gap: 34px;
+    padding: var(--space-0) var(--space-0);
+    gap: var(--space-1);
 }
 
 .hero-section .title-section .hero-title {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: var(--space-4);
 }
 
 .hero-section .title-section .hero-title h1 {
     color: var(--bright-white);
-    font-family: 'Ubuntu';
-    font-weight: bold;
-    font-size: var(--text-size-header);
+    font: var(--text-header);
     text-align: center;
 }
 
 .hero-section .title-section .hero-title p {
     color: var(--blue-accent);
-    font-size: var(--text-size-header-sub);
     text-align: center;
+    font: var(--text-header-sub);
 }
 
 .hero-section .title-section .hero-description {
     text-align: center;
+    font: var(--text-paragraph-focus);
 }
 
 .hero-section .title-section .hero-buttons {
@@ -128,18 +148,18 @@ span.text-highlight {
 .cards-section {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: var(--space-3);
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;    
 }
 
 .projects-section {
-    padding: 64px var(--space-main-box);
+    padding: var(--space-0) var(--space-column);
 }
 
 .certifications-section {
-    padding: 34px var(--space-main-box);
+    padding: var(--space-1) var(--space-column);
 }
 
 .contact-section {
@@ -148,8 +168,8 @@ span.text-highlight {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 64px var(--space-main-box);
-    gap: 12px;
+    padding: var(--space-0) var(--space-column);
+    gap: var(--space-3);
 }
 
 .footer {
@@ -157,15 +177,23 @@ span.text-highlight {
     flex-direction: column;
     align-items: center;
     background-color: var(--background-2);
-    gap: 12px;
-    padding: 24px var(--space-main-box);
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-main-box);
 }
 
 .footer .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: var(--space-3);
+}
+
+.footer .extra-contact-links
+{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: var(--space-3) 0px;
 }
 
 .footer .extra-links
@@ -173,36 +201,37 @@ span.text-highlight {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: var(--space-4);
 }
 
 .footer .extra-links header h1 {
-    font-size: var(--text-size-paragraph-focus);
+    font-size: var(--paragraph-text-0);
     font-weight: normal;
     color: var(--bright-white);
 }
 
 .footer .extra-links .links-list {
     display: flex;
-    gap: 12px;
+    gap: var(--space-3);
 }
 
 .footer .copyright {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: var(--space-3);
     align-items: center;
-    padding: 12px 0px;
+    padding: var(--space-3) 0px;
 }
 
 .footer .copyright i {
     color: white;
     mix-blend-mode: overlay;
+    font: var(--text-regular-paragraph-italic);
 }
 
 .clicklink {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: var(--space-4);
     text-decoration: none;
 }

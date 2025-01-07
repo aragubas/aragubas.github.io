@@ -1,15 +1,14 @@
 .button {
     display: flex;
     flex-shrink: 1;
-    font-family: 'Ubuntu';
-    font-weight: bold;
+    font: var(--text-interactive-size);
     border-radius: var(--control-border-radius);
     outline: 1px solid var(--control-outer-border);
     border: 1px solid var(--brand-color-saturated);
     background-color: var(--brand-color);
     color: var(--bright-white);
     margin: 1px;
-    padding: 3px 12px;
+    padding: calc(var(--space-4) / 2) var(--space-3);
     user-select: none;
     justify-content: center;
     text-decoration: none;
