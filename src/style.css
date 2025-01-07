@@ -256,9 +256,11 @@ span.text-highlight {
         --paragraph-text-scale-factor: 0.9;
         --space-scaling-factor: 0.7;
     }
+}
 
+@media only screen and (max-width: 700px) {
     .hero-section .hero-image {
-        width: 200px;
+        width: 150px;
     }
 }
 
@@ -267,10 +269,6 @@ span.text-highlight {
         --space-scaling-factor: 0.7;
         --space-column: var(--space-2);
         --paragraph-text-scale-factor: 0.85;
-    }
-
-    .hero-section {
-        flex-direction: column-reverse;
     }
 
     .hero-section .title-section {
@@ -293,6 +291,11 @@ span.text-highlight {
 @media only screen and (max-width: 425px) {
     :root {
         --space-scaling-factor: 0.45;
+        --text-header-sub: bold calc(var(--paragraph-text-0) * 0.9)px, 'Roboto Condensed';
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
     }
 }
 
