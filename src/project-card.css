@@ -8,6 +8,8 @@
     border: 1px solid var(--background-2-saturated);
     background-color: var(--background-2);
     border-radius: var(--control-border-radius);
+    max-width: 350px;
+    text-align: center;
 }
 
 .project-card header h1 {
@@ -18,4 +20,11 @@
 .project-card .buttons {
     display: flex;
     gap: var(--space-3);
+}
+
+@media only screen and (max-width: 600px) {
+    .project-card {
+        max-width: none;
+        gap: var(--space-2)
+    }
 }

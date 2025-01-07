@@ -13,3 +13,9 @@
     justify-content: center;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .button {
+        padding: calc(var(--space-4) / 2) calc(var(--space-3) / 1.4);
+    }
+}

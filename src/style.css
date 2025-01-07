@@ -19,22 +19,25 @@
     --control-outer-border: rgba(0, 0, 0, 25%);
     
     /* Font Sizes */
-    --brand-text-0: 64px;
-    --brand-text-1: 34px;
-    --brand-text-2: 24px;
-    --brand-text-3: 20px;
-    --brand-text-4: 16px;
+    --brand-text-scale-factor: 1;
+    --brand-text-0: calc(64px * var(--brand-text-scale-factor));
+    --brand-text-1: calc(34px * var(--brand-text-scale-factor));
+    --brand-text-2: calc(24px * var(--brand-text-scale-factor));
+    --brand-text-3: calc(20px * var(--brand-text-scale-factor));
+    --brand-text-4: calc(16px * var(--brand-text-scale-factor));
     
-    --paragraph-text-0: 24px;
-    --paragraph-text-1: 20px;
-    --paragraph-text-2: 16px;
+    --paragraph-text-scale-factor: 1;
+    --paragraph-text-0: calc(24px * var(--paragraph-text-scale-factor));
+    --paragraph-text-1: calc(20px * var(--paragraph-text-scale-factor));
+    --paragraph-text-2: calc(16px * var(--paragraph-text-scale-factor));
 
     /* Spaces */
-    --space-0: 64px;
-    --space-1: 34px;
-    --space-2: 24px;
-    --space-3: 12px;
-    --space-4: 6px;
+    --space-scaling-factor: 1;
+    --space-0: calc(64px * var(--space-scaling-factor));
+    --space-1: calc(34px * var(--space-scaling-factor));
+    --space-2: calc(24px * var(--space-scaling-factor));
+    --space-3: calc(12px * var(--space-scaling-factor));
+    --space-4: calc(6px * var(--space-scaling-factor));
     --space-column: var(--space-0);
 
     --text-interactive-size: bold var(--paragraph-text-2)px, 'Ubuntu';
@@ -79,19 +82,20 @@ span.text-highlight {
 .main-header .right-buttons {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: var(--space-3);
 }
 
 .hero-section {
     display: flex;
     padding: 0px var(--space-column);
-    gap: var(--space-0);
+    gap: var(--space-column);
     
 }
 
 .hero-section .fursona-section {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 12px;
     padding: var(--space-0) 0px;
@@ -178,13 +182,14 @@ span.text-highlight {
     align-items: center;
     background-color: var(--background-2);
     gap: var(--space-3);
-    padding: var(--space-2) var(--space-main-box);
+    padding: var(--space-2) var(--space-column);
 }
 
 .footer .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: var(--space-3);
 }
 
@@ -212,6 +217,8 @@ span.text-highlight {
 
 .footer .extra-links .links-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--space-3);
 }
 
@@ -234,4 +241,69 @@ span.text-highlight {
     align-items: center;
     gap: var(--space-4);
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1120px) {
+    :root {
+        --brand-text-scale-factor: 0.9;
+        --space-column: var(--space-1);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    :root {
+        --brand-text-scale-factor: 0.5;
+        --paragraph-text-scale-factor: 0.9;
+        --space-scaling-factor: 0.7;
+    }
+
+    .hero-section .hero-image {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --space-scaling-factor: 0.7;
+        --space-column: var(--space-2);
+        --paragraph-text-scale-factor: 0.85;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .title-section {
+        padding: var(--space-2) var(--space-3);
+    }
+
+    .hero-section .fursona-section {
+        padding: 0;
+    }
+
+    .hero-section .hero-image {
+        width: 150px;
+    }
+
+    .cards-section .project-card {
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    :root {
+        --space-scaling-factor: 0.45;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main-header {
+        justify-content: center;
+        gap: var(--space-2);
+    }
+
+    .main-header .right-buttons{
+        gap: var(--space-2);
+    }
+    
 }

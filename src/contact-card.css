@@ -6,7 +6,7 @@
     outline: 1px solid var(--control-outer-border);
     border: 1px solid var(--background-2-saturated);
     margin: 1px;
-    padding: 34px;
+    padding: var(--space-1);
     gap: 12px;
     border-radius: var(--control-border-radius);
     text-decoration: none;
@@ -19,6 +19,12 @@
 }
 
 .contact-card .icon {
-    font-size: 64px;
+    font-size: var(--space-0);
     color: var(--bright-white);
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-card {
+        padding: var(--space-2);
+    }
 }
