@@ -2,22 +2,200 @@
 <html lang="en">
 
 <head>
+  <title>Harley Sky Saphri</title>
   <meta charset="UTF-8" />
-  <meta name="description" content="Aragubas' Portfolio Website!">
-  <meta name="keyword" content="Aragubas, Paulo Otávio de Lima">
-  <meta name="author" content="Aragubas">
+  <meta name="description" content="Harley Sky Saphri's Portfolio">
+  <meta name="keyword" content="Aragubas, Harley Sky Saphri, Paulo Otávio de Lima">
+  <meta name="author" content="Aragubas, Harley Sky Saphri">
   <link rel="icon" type="image/svg+xml" href="/aragubas.svg" />
+  <link rel="stylesheet" type="text/css" href="src/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
-
-  <title>Aragubas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/fontawesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="/brands.min.css" />
+  <link rel="stylesheet" type="text/css" href="/solid.min.css" />
 </head>
 
 <body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.ts"></script>
+  <header id="header" class="main-header">
+    <a class="button" href="">Contact Now</a>
+    <div class="right-buttons">
+      <a class="button" href="">Home</a>
+      <a class="button" href="">Projects</a>
+      <a class="button" href="">Certifications</a>
+    </div>
+  </header>
+
+
+  <article id="hero" class="hero-section">
+    <section class="fursona-section">
+      <img src="fursona.jpg" class="hero-image">
+      <p>by <a href="https://daieny.com" target="_blank">Daieny Schuttz</a></p>
+    </section>
+    
+    <section class="title-section">
+      <div class="hero-title">
+        <h1>Harley Sky Saphri</h1>
+        <p>Junior Software Dev and Designer</p>
+      </div>
+
+      <p class="hero-description">Hi, I'm a 19 year old software developer from Brazil who loves <span class="text-highlight">Open Source</span>.<br> I'm the owner of <a target="_blank" href="https://aragubas.com">Aragubas</a></p>
+
+      <div class="hero-buttons">
+        <a class="button" href="https://aragubas.com" target="_blank">Check out aragubas.com</a>
+      </div>
+    </section>
+  </article>
+
+
+  <article id="projects" class="cards-section projects-section">
+    <section class="project-card">
+      <header>
+        <h1>LiVerse</h1>
+      </header>
+      <p>LiVerse is a native PNGTuber streamer app<br>for Windows, macOS and Linux</p>
+      <div class="buttons">
+        <a class="button" href="https://github.com/aragubas/liverse" target="_blank">Github</a>
+      </div>
+    </section>
+    
+    <section class="project-card">
+      <header>
+        <h1>Taiyou</h1>
+      </header>
+      <p>TaiyouUI is a declarative native GUI Framework<br>built with C++ using SDL2</p>
+      <div class="buttons">
+        <a class="button" href="https://github.com/aragubas/taiyouui" target="_blank">Github</a>
+      </div>
+    </section>
+    
+    <section class="project-card">
+      <header>
+        <h1>ChargerPlugEvent</h1>
+      </header>
+      <p>C# Winform app for displaying a notification and <br> plays a sound when plugging/unpligging laptop charger</p>
+      <div class="buttons">
+        <a class="button" href="https://github.com/aragubas/chargerplugevent" target="_blank">Github</a>
+      </div>
+    </section>
+    
+    <section class="project-card">
+      <header>
+        <h1>GDIShoot</h1>
+      </header>
+      <p>C++ CLI tool for taking a screenshot of the <br> whole screen</p>
+      <div class="buttons">
+        <a class="button" href="https://github.com/aragubas/GDIshot" target="_blank">Github</a>
+      </div>
+    </section>
+    
+    <section class="project-card">
+      <header>
+        <h1>🗣️</h1>
+      </header>
+      <p>aiajsdkafoefpokwepfdoedpefw<br>press 'A' for a better experience :3</p>
+      <div class="buttons">
+        <a class="button" href="https://github.com/aragubas/aiajsdkafoefpokwepfdoedpefw" target="_blank">Github</a>
+        <a class="button" href="https://aragubas.com/aiajsdkafoefpokwepfdoedpefw/" target="_blank">Website</a>
+      </div>
+    </section>
+  </article>
+
+
+  <article id="certifications" class="cards-section certifications-section">
+    <section class="project-card">
+      <header>
+        <h1>Foundational C# with Microsoft</h1>
+      </header>
+      <p>At March 13, 2024. I completed FreeCodeCamp’s Foundational <br> C# with Microsoft course!</p>
+      <div class="buttons">
+        <a class="button" href="https://www.freecodecamp.org/certification/aragubas/foundational-c-sharp-with-microsoft" target="_blank">View Certification</a>
+      </div>
+    </section>
+  </article>
+
+
+  <article id="contact" class="contact-section">
+    <a target="_blank" href="https://www.linkedin.com/in/harley-sky-saphri-357344264/" class="contact-card">
+      <header>
+        <h1>LinkedIn</h1>
+      </header>
+      <span class="icon fa-brands fa-linkedin"></span>
+    </a>
+
+    <a target="_blank" href="https://github.com/aragubas" class="contact-card">
+      <header>
+        <h1>Github</h1>
+      </header>
+      <span class="icon fa-brands fa-github"></span>
+    </a>
+
+    <a target="_blank" href="https://bsky.app/profile/aragubas.com" class="contact-card">
+      <header>
+        <h1>Bluesky</h1>
+      </header>
+      <span class="icon fa-brands fa-bluesky"></span>
+    </a>
+
+    <a target="_blank" href="https://t.me/aragubas" class="contact-card">
+      <header>
+        <h1>Telegram</h1>
+      </header>
+      <span class="icon fa-brands fa-telegram"></span>
+    </a>
+
+    <a target="_blank" href="mailto:dpaulootavio5@outlook.com" class="contact-card">
+      <header>
+        <h1>Email</h1>
+      </header>
+      <span class="icon fa-solid fa-envelope"></span>
+    </a>
+  </article>
+
+  <footer class="footer">
+    <div class="buttons">
+      <a class="button" href="" target="_blank">Home</a>
+      <a class="button" href="" target="_blank">Projects</a>
+      <a class="button" href="" target="_blank">Certifications</a>
+      <a class="button" href="" target="_blank">Contact</a>
+    </div>
+
+    <article class="extra-links">
+      <header>
+        <h1>Contact Me</h1>
+      </header>
+      
+      <div class="links-list">
+        <a class="clicklink" href="mailto:dpaulootavio5@outlook.com" target="_blank"><span class="fa-solid fa-envelope"></span>Email</a>
+        <a class="clicklink" href="https://t.me/aragubas" target="_blank"><span class="fa-brands fa-telegram"></span>Telegram</a>
+        <a class="clicklink" href="https://www.linkedin.com/in/harley-sky-saphri-357344264/" target="_blank"><span class="fa-brands fa-linkedin"></span>LinkedIn</a>
+        <p class="clicklink"><span class="fa-brands fa-discord"></span>@aragubas</a>
+      </div>
+    </article>
+
+    <article class="extra-links">
+      <header>
+        <h1>Social</h1>
+      </header>
+      
+      <div class="links-list">
+        <a class="clicklink" href="https://youtube.com/c/aragubas" target="_blank"><span class="fa-brands fa-youtube"></span>YouTube</a>
+        <a class="clicklink" href="https://www.furaffinity.net/user/aragubas" target="_blank"><span class="fa-solid fa-paw"></span>Furaffinity</a>
+        <a class="clicklink" href="https://furry.engineer/@aragubas" target="_blank"><span class="fa-brands fa-mastodon"></span>Mastodon</a>
+        <a class="clicklink" href="https://x.com/aragubas_" target="_blank"><span class="fa-brands fa-twitter"></span>Twitter/X</a>
+        <a class="clicklink" href="https://www.instagram.com/aragubas/" target="_blank"><span class="fa-brands fa-instagram"></span>Instagram</a>
+        <a class="clicklink" href="https://bsky.app/profile/aragubas.com" target="_blank"><span class="fa-brands fa-bluesky"></span>Bluesky</a>
+      </div>
+    </article>
+
+    <article class="copyright">
+      <p><span class="fa-solid fa-copyright"></span> 2025 Harley Sky Saphri</p>
+      <i>the essential is invisible to the eye</i>
+    </article>
+  </footer>
 </body>
 
 </html>

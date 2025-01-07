@@ -1,0 +1,21 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 12px;
+    gap: 12px;
+    margin: 1px;
+    outline: 1px solid var(--control-outer-border);
+    border: 1px solid var(--background-2-saturated);
+    background-color: var(--background-2);
+    border-radius: var(--control-border-radius);
+}
+
+.project-card header h1 {
+    font-size: var(--text-size-header-sub);
+    text-align: center;
+}
+
+.project-card .buttons {
+    display: flex;
+    gap: 10px;
+}
