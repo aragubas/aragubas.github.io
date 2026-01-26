@@ -5,7 +5,7 @@
   background-color: var(--background-2-transparent);
   backdrop-filter: blur(5px);
   outline: 1px solid var(--control-outer-border);
-  border: 2px solid var(--control-inner-border);
+  border: var(--control-inner-border-size) solid var(--control-inner-border);
   margin: 1px;
   padding: var(--space-3) var(--space-1);
   gap: var(--space-3);

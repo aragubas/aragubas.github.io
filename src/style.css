@@ -18,6 +18,7 @@
   --blue-accent: #20a4f3;
 
   --control-border-radius: 20px;
+  --control-inner-border-size: 2px;
   --control-shadow-color: rgba(0, 0, 0, 50%);
   --control-outer-border: rgba(0, 0, 0, 50%);
   --control-inner-border: rgba(127, 127, 127, 10%);
@@ -119,7 +120,7 @@ span.text-highlight {
   margin-top: 0px;
   outline: 1px solid var(--control-outer-border);
   background-color: var(--background-2-less-transparent);
-  border: 1px solid var(--background-2-saturated);
+  border: var(--control-inner-border-size) solid var(--background-2-saturated);
   backdrop-filter: blur(5px);
   border-top-width: 0px;
   padding: var(--space-0) var(--space-0);
@@ -297,14 +298,9 @@ span.text-highlight {
   :root {
     --space-scaling-factor: 0.45;
     --text-header-sub: bold calc(var(--paragraph-text-0) * 0.9) px, "Roboto Condensed";
+    --control-inner-border-size: 1px;
   }
 
-  .hero-section {
-    flex-direction: column-reverse;
-  }
-}
-
-@media only screen and (max-width: 320px) {
   .main-header {
     justify-content: center;
     gap: var(--space-2);
@@ -313,4 +309,13 @@ span.text-highlight {
   .main-header .right-buttons {
     gap: var(--space-2);
   }
+
+  .hero-section {
+    flex-direction: column-reverse;
+  }
 }
+
+/* Might be useful someday
+@media only screen and (max-width: 320px) {
+}
+*/

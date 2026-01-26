@@ -4,7 +4,7 @@
   font: var(--text-interactive-size);
   border-radius: var(--control-border-radius);
   outline: 1px solid var(--control-outer-border);
-  border: 2px solid var(--brand-color-saturated);
+  border: var(--control-inner-border-size) solid var(--brand-color-saturated);
   background-color: var(--brand-color);
   color: var(--bright-white);
   margin: 1px;
