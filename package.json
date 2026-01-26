@@ -9,8 +9,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {},
   "devDependencies": {
+    "browserslist": "^4.28.1",
+    "lightningcss": "^1.31.1",
     "vite": "^3.0.0"
   }
 }
