@@ -15,7 +15,7 @@
 }
 
 .button:active {
-  background-color: var(--cyan-accent);
+  background-color: var(--brand-color-saturated);
   border-color: var(--brand-color);
 }
 
