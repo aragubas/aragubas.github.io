@@ -1,21 +1,26 @@
 .button {
-    display: flex;
-    flex-shrink: 1;
-    font: var(--text-interactive-size);
-    border-radius: var(--control-border-radius);
-    outline: 1px solid var(--control-outer-border);
-    border: 1px solid var(--brand-color-saturated);
-    background-color: var(--brand-color);
-    color: var(--bright-white);
-    margin: 1px;
-    padding: calc(var(--space-4) / 2) var(--space-3);
-    user-select: none;
-    justify-content: center;
-    text-decoration: none;
+  display: flex;
+  flex-shrink: 1;
+  font: var(--text-interactive-size);
+  border-radius: var(--control-border-radius);
+  outline: 1px solid var(--control-outer-border);
+  border: 2px solid var(--brand-color-saturated);
+  background-color: var(--brand-color);
+  color: var(--bright-white);
+  margin: 1px;
+  padding: calc(var(--space-4) / 2) var(--space-3);
+  user-select: none;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: var(--cyan-accent);
+  border-color: var(--brand-color);
 }
 
 @media only screen and (max-width: 600px) {
-    .button {
-        padding: calc(var(--space-4) / 2) calc(var(--space-3) / 1.4);
-    }
+  .button {
+    padding: calc(var(--space-4) / 2) calc(var(--space-3) / 1.4);
+  }
 }

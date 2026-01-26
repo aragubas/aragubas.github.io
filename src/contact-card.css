@@ -1,30 +1,32 @@
 .contact-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--background-2);
-    outline: 1px solid var(--control-outer-border);
-    border: 1px solid var(--background-2-saturated);
-    margin: 1px;
-    padding: var(--space-1);
-    gap: 12px;
-    border-radius: var(--control-border-radius);
-    text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--background-2-transparent);
+  backdrop-filter: blur(5px);
+  outline: 1px solid var(--control-outer-border);
+  border: 2px solid var(--control-inner-border);
+  margin: 1px;
+  padding: var(--space-3) var(--space-1);
+  gap: var(--space-3);
+  border-radius: var(--control-border-radius);
+  text-decoration: none;
+  box-shadow: 0px 0px 50px 0px var(--control-shadow-color);
 }
 
 .contact-card h1 {
-    font-size: var(--text-size-header-sub);
-    font-weight: bold;
-    color: var(--text-normal);
+  font-size: var(--paragraph-text-1);
+  font-weight: bold;
+  color: var(--text-normal);
 }
 
 .contact-card .icon {
-    font-size: var(--space-0);
-    color: var(--bright-white);
+  font-size: calc(var(--space-0) * 0.75);
+  color: var(--bright-white);
 }
 
 @media only screen and (max-width: 600px) {
-    .contact-card {
-        padding: var(--space-2);
-    }
+  .contact-card {
+    padding: var(--space-2);
+  }
 }
